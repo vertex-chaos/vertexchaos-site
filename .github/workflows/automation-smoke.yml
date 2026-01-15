@@ -1,0 +1,28 @@
+name: automation-smoke
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Write a file
+        run: |
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > .github/automation-smoke.txt
+
+      - name: Commit and push
+        run: |
+          git config user.name "vertex-chaos automation"
+          git config user.email "automation@vertexchaos.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: automation smoke test"
+          git push
