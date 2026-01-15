@@ -1,0 +1,33 @@
+---
+import Base from "../layouts/Base.astro";
+import { site } from "../config/site";
+const mailto = `mailto:${site.email}?subject=${encodeURIComponent(site.cta.mailtoSubject)}`;
+---
+<Base title={`Contact | ${site.brand}`} description="Contact Vertex Chaos.">
+  <div class="card pad">
+    <div class="kicker"><span class="dot"></span><span>contact</span><span class="badge">email first</span></div>
+    <h1>Contact</h1>
+    <p class="lede">
+      Email is the fastest route. Include: scope, timeline, constraints, and what “done” looks like.
+      I’ll respond with questions and a quote.
+    </p>
+
+    <div class="cta">
+      <a class="btn primary" href={mailto}>{site.email}</a>
+      <a class="btn" href={site.social.githubOrg}>GitHub</a>
+      <a class="btn" href={site.social.linkedin}>LinkedIn</a>
+    </div>
+
+    <hr class="sep" />
+    <div class="codebox">
+      Suggested subject line: <span style="color:rgba(233,238,247,.95)">{site.cta.mailtoSubject}</span><br/>
+      Suggested body:
+      <div style="margin-top:6px;">
+        - What you need<br/>
+        - Current setup / constraints<br/>
+        - Deadline (real one)<br/>
+        - Budget range (optional but saves time)
+      </div>
+    </div>
+  </div>
+</Base>

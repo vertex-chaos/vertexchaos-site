@@ -1,0 +1,25 @@
+---
+import Base from "../../layouts/Base.astro";
+import { site } from "../../config/site";
+import { getCollection } from "astro:content";
+const studies = await getCollection("case-studies");
+---
+<Base title={`Work | ${site.brand}`} description="Selected case studies. Generalized to protect client environments.">
+  <div class="card pad">
+    <div class="kicker"><span class="dot"></span><span>work</span><span class="badge">portfolio</span></div>
+    <h1>Work</h1>
+    <p class="lede">Generalized case studies with the parts clients care about: problem, approach, result.</p>
+
+    <div class="list">
+      {studies.map((s) => (
+        <div class="row">
+          <a href={`/work/${s.slug}`}>
+            <div class="meta">{s.data.kind} · {(s.data.tags ?? []).join(" · ")}</div>
+            <div class="title">{s.data.title}</div>
+            <div class="desc">{s.data.summary}</div>
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</Base>

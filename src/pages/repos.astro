@@ -1,0 +1,38 @@
+---
+import Base from "../layouts/Base.astro";
+import { site } from "../config/site";
+
+const base = site.social.githubOrgBase.replace(/\/$/, "");
+
+const repos = [
+  { name: "SFTP Ingestion Automation (sample)", slug: "sftp-ingestion-sample", desc: "Secure transfer patterns, validation, retry logic, and logging." },
+  { name: "Windows File Transfer Toolkit (sample)", slug: "windows-file-transfer-toolkit", desc: "High-volume file ops with safe reruns and guardrails." },
+  { name: "Doc Automation Utilities (sample)", slug: "doc-automation-utils", desc: "Template-driven document updates and formatting normalization." },
+];
+---
+<Base title={`Repos | ${site.brand}`} description="Curated repositories and public work samples.">
+  <div class="card pad">
+    <div class="kicker"><span class="dot"></span><span>repos</span><span class="badge">curated</span></div>
+    <h1>Repos</h1>
+    <p class="lede">Short list, high signal. Once your org exists, set <span class="badge">githubOrgBase</span> and these links go live.</p>
+
+    <div class="list">
+      {repos.map((r) => (
+        <div class="row">
+          <a href={`${base}/${r.slug}`}>
+            <div class="meta">GitHub</div>
+            <div class="title">{r.name}</div>
+            <div class="desc">{r.desc}</div>
+          </a>
+        </div>
+      ))}
+    </div>
+
+    <hr class="sep" />
+    <div class="codebox">
+      Update:
+      <div>1) <span style="color:rgba(233,238,247,.95)">src/config/site.ts</span> (GitHub org base URL + LinkedIn)</div>
+      <div>2) Case studies in <span style="color:rgba(233,238,247,.95)">src/content/case-studies</span></div>
+    </div>
+  </div>
+</Base>

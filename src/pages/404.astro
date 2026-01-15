@@ -1,0 +1,12 @@
+---
+import Base from "../layouts/Base.astro";
+import { site } from "../config/site";
+---
+<Base title={`404 | ${site.brand}`} description="Page not found.">
+  <div class="card pad">
+    <div class="kicker"><span class="dot"></span><span>404</span><span class="badge">not found</span></div>
+    <h1>Page not found</h1>
+    <p class="lede">This page doesn’t exist. Either you mistyped it, or it migrated and didn’t file its forwarding address.</p>
+    <a class="btn primary" href="/">Go home</a>
+  </div>
+</Base>

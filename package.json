@@ -1,0 +1,14 @@
+{
+  "name": "vertex_chaos_site",
+  "type": "module",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  }
+}

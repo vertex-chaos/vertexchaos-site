@@ -1,0 +1,99 @@
+---
+import Base from "../layouts/Base.astro";
+import { site } from "../config/site";
+import { getCollection } from "astro:content";
+
+const studies = (await getCollection("case-studies")).slice(0, 3);
+const mailto = `mailto:${site.email}?subject=${encodeURIComponent(site.cta.mailtoSubject)}`;
+---
+<Base title={`${site.brand} | ${site.tagline}`} description={site.lede}>
+  <section class="hero">
+    <div class="card pad">
+      <div class="kicker"><span class="dot"></span><span>{site.domain}</span><span class="badge">consulting</span></div>
+      <h1>{site.tagline}</h1>
+      <p class="lede">{site.lede}</p>
+
+      <div class="cta">
+        <a class="btn primary" href={mailto}>{site.cta.primary}</a>
+        <a class="btn" href="/work">Portfolio</a>
+        <a class="btn" href={site.social.githubOrg}>GitHub</a>
+      </div>
+
+      <div class="grid">
+        <div class="card pad item">
+          <h3>Automation</h3>
+          <p>Make the fix repeatable, not legendary.</p>
+        </div>
+        <div class="card pad item">
+          <h3>Migrations</h3>
+          <p>Plan it, run it, validate it, document it. Sleep later.</p>
+        </div>
+        <div class="card pad item">
+          <h3>Operations</h3>
+          <p>Runbooks, guardrails, and fewer “surprise” outages.</p>
+        </div>
+      </div>
+
+      <hr class="sep" />
+
+      <div class="section-title">
+        <h2>How I work</h2>
+        <span>simple, explicit, testable</span>
+      </div>
+      <div class="codebox">
+        <div>1) Define scope → 2) Ship increments → 3) Add guardrails → 4) Document → 5) Hand-off</div>
+        <div style="margin-top:6px; color: rgba(167,177,194,.92);">If it cannot be repeated, it is not done.</div>
+      </div>
+    </div>
+
+    <aside class="card pad">
+      <div class="section-title">
+        <h2>What I help with</h2>
+        <span>medium humor, serious outcomes</span>
+      </div>
+      <div class="list">
+        <div class="row">
+          <div class="meta">PowerShell · Python · CI/CD</div>
+          <div class="title">Automation and tooling</div>
+          <div class="desc">Turn multi-hour chores into a button. Or a scheduled job. Same vibe.</div>
+        </div>
+        <div class="row">
+          <div class="meta">Windows · Identity</div>
+          <div class="title">AD, DNS, upgrades, hardening</div>
+          <div class="desc">Because identity breaks in creative ways.</div>
+        </div>
+        <div class="row">
+          <div class="meta">Infra · Cloud</div>
+          <div class="title">Architecture and migrations</div>
+          <div class="desc">Make it stable, then make it cheaper. In that order.</div>
+        </div>
+      </div>
+
+      <hr class="sep" />
+      <a class="btn primary" href={mailto}>Contact for quote</a>
+      <p class="lede" style="margin-top:12px; margin-bottom:0;">
+        Rate depends on scope. If you want a number, send a problem statement and constraints.
+      </p>
+    </aside>
+  </section>
+
+  <hr class="sep" />
+
+  <section>
+    <div class="section-title">
+      <h2>Featured work</h2>
+      <span>anonymized, on purpose</span>
+    </div>
+    <div class="list">
+      {studies.map((s) => (
+        <div class="row">
+          <a href={`/work/${s.slug}`}>
+            <div class="meta">{s.data.kind} · {(s.data.tags ?? []).slice(0,3).join(" · ")}</div>
+            <div class="title">{s.data.title}</div>
+            <div class="desc">{s.data.summary}</div>
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>

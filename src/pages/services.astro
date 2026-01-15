@@ -1,0 +1,42 @@
+---
+import Base from "../layouts/Base.astro";
+import { site } from "../config/site";
+const mailto = `mailto:${site.email}?subject=${encodeURIComponent(site.cta.mailtoSubject)}`;
+---
+<Base title={`Services | ${site.brand}`} description="Services: automation, infrastructure, migrations, and operational hardening.">
+  <div class="card pad">
+    <div class="kicker"><span class="dot"></span><span>services</span><span class="badge">practical</span></div>
+    <h1>Services</h1>
+    <p class="lede">Short list. Clear outcomes. Minimal buzzwords.</p>
+
+    <div class="grid">
+      <div class="card pad item">
+        <h3>Automation & scripting</h3>
+        <p>PowerShell/Python automation, runbooks, repeatable workflows, safe retries, logs that tell the truth.</p>
+      </div>
+      <div class="card pad item">
+        <h3>Windows & identity</h3>
+        <p>AD DS, DNS, GPO, server upgrades, hardening, troubleshooting that ends in documentation.</p>
+      </div>
+      <div class="card pad item">
+        <h3>Infra & cloud</h3>
+        <p>Architecture reviews, migrations, cost controls, reliability patterns, and operational guardrails.</p>
+      </div>
+      <div class="card pad item">
+        <h3>CI/CD and delivery</h3>
+        <p>Pragmatic pipelines, validation, and deployment patterns that do not require heroics to maintain.</p>
+      </div>
+      <div class="card pad item">
+        <h3>Assessments</h3>
+        <p>Fixed-scope reviews with deliverables: findings, plan, and a prioritized backlog.</p>
+      </div>
+      <div class="card pad item">
+        <h3>Ongoing advisory</h3>
+        <p>Retainers for steady progress: roadmap, reviews, and “what should we do next?” decisions.</p>
+      </div>
+    </div>
+
+    <hr class="sep" />
+    <a class="btn primary" href={mailto}>Contact for quote</a>
+  </div>
+</Base>

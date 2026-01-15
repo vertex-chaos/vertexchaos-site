@@ -1,0 +1,33 @@
+---
+import Base from "../layouts/Base.astro";
+import { site } from "../config/site";
+const mailto = `mailto:${site.email}?subject=${encodeURIComponent(site.cta.mailtoSubject)}`;
+---
+<Base title={`About | ${site.brand}`} description="About Vertex Chaos: practical consulting, automation, and calm operations.">
+  <div class="card pad">
+    <div class="kicker"><span class="dot"></span><span>about</span><span class="badge">context</span></div>
+    <h1>About</h1>
+    <p class="lede">
+      vertex_chaos exists to make systems less chaotic. Name is aspirational, obviously.
+      The work is practical: automate the repeatable, document the scary, and keep changes boring.
+    </p>
+
+    <div class="grid">
+      <div class="card pad item">
+        <h3>Principles</h3>
+        <p>Automate. Validate. Document. Hand-off. Repeat.</p>
+      </div>
+      <div class="card pad item">
+        <h3>Style</h3>
+        <p>Security-aware, ops-friendly, and allergic to “temporary” fixes that become permanent.</p>
+      </div>
+      <div class="card pad item">
+        <h3>Humor</h3>
+        <p>Medium. The work is serious. The situations are sometimes absurd.</p>
+      </div>
+    </div>
+
+    <hr class="sep" />
+    <a class="btn primary" href={mailto}>Contact for quote</a>
+  </div>
+</Base>
