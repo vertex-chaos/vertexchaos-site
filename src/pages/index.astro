@@ -1,99 +1,186 @@
 ---
-import Base from "../layouts/Base.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import { site } from "../config/site";
-import { getCollection } from "astro:content";
+import Card from "../components/Card.astro";
+import Tag from "../components/Tag.astro";
 
-const studies = (await getCollection("case-studies")).slice(0, 3);
-const mailto = `mailto:${site.email}?subject=${encodeURIComponent(site.cta.mailtoSubject)}`;
+const title = "vertex_chaos";
 ---
-<Base title={`${site.brand} | ${site.tagline}`} description={site.lede}>
-  <section class="hero">
-    <div class="card pad">
-      <div class="kicker"><span class="dot"></span><span>{site.domain}</span><span class="badge">consulting</span></div>
-      <h1>{site.tagline}</h1>
-      <p class="lede">{site.lede}</p>
 
-      <div class="cta">
-        <a class="btn primary" href={mailto}>{site.cta.primary}</a>
-        <a class="btn" href="/work">Portfolio</a>
-        <a class="btn" href={site.social.githubOrg}>GitHub</a>
-      </div>
+<BaseLayout title={title} description={site.subhead}>
+  <div class="flex items-center gap-2 text-sm text-slate-500">
+    <span class="text-slate-400">●</span>
+    <span>{site.domainLabel}</span>
+  </div>
 
-      <div class="grid">
-        <div class="card pad item">
-          <h3>Automation</h3>
-          <p>Make the fix repeatable, not legendary.</p>
-        </div>
-        <div class="card pad item">
-          <h3>Migrations</h3>
-          <p>Plan it, run it, validate it, document it. Sleep later.</p>
-        </div>
-        <div class="card pad item">
-          <h3>Operations</h3>
-          <p>Runbooks, guardrails, and fewer “surprise” outages.</p>
-        </div>
-      </div>
+  <section class="mt-10">
+    <h1 class="whitespace-pre-line text-5xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
+      {site.headline}
+    </h1>
+    <p class="mt-6 max-w-2xl text-base leading-7 text-slate-600">
+      {site.subhead}
+    </p>
 
-      <hr class="sep" />
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a
+        href={site.links.email}
+        class="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white no-underline hover:bg-slate-800"
+      >
+        Email me
+      </a>
 
-      <div class="section-title">
-        <h2>How I work</h2>
-        <span>simple, explicit, testable</span>
-      </div>
-      <div class="codebox">
-        <div>1) Define scope → 2) Ship increments → 3) Add guardrails → 4) Document → 5) Hand-off</div>
-        <div style="margin-top:6px; color: rgba(167,177,194,.92);">If it cannot be repeated, it is not done.</div>
-      </div>
-    </div>
+      <a
+        href={site.links.portfolio}
+        class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 no-underline hover:bg-slate-50"
+      >
+        Portfolio
+      </a>
 
-    <aside class="card pad">
-      <div class="section-title">
-        <h2>What I help with</h2>
-        <span>medium humor, serious outcomes</span>
-      </div>
-      <div class="list">
-        <div class="row">
-          <div class="meta">PowerShell · Python · CI/CD</div>
-          <div class="title">Automation and tooling</div>
-          <div class="desc">Turn multi-hour chores into a button. Or a scheduled job. Same vibe.</div>
-        </div>
-        <div class="row">
-          <div class="meta">Windows · Identity</div>
-          <div class="title">AD, DNS, upgrades, hardening</div>
-          <div class="desc">Because identity breaks in creative ways.</div>
-        </div>
-        <div class="row">
-          <div class="meta">Infra · Cloud</div>
-          <div class="title">Architecture and migrations</div>
-          <div class="desc">Make it stable, then make it cheaper. In that order.</div>
-        </div>
-      </div>
-
-      <hr class="sep" />
-      <a class="btn primary" href={mailto}>Contact for quote</a>
-      <p class="lede" style="margin-top:12px; margin-bottom:0;">
-        Rate depends on scope. If you want a number, send a problem statement and constraints.
-      </p>
-    </aside>
-  </section>
-
-  <hr class="sep" />
-
-  <section>
-    <div class="section-title">
-      <h2>Featured work</h2>
-      <span>anonymized, on purpose</span>
-    </div>
-    <div class="list">
-      {studies.map((s) => (
-        <div class="row">
-          <a href={`/work/${s.slug}`}>
-            <div class="meta">{s.data.kind} · {(s.data.tags ?? []).slice(0,3).join(" · ")}</div>
-            <div class="title">{s.data.title}</div>
-            <div class="desc">{s.data.summary}</div>
-          </a>
-        </div>
-      ))}
+      <a
+        href={site.links.github}
+        class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 no-underline hover:bg-slate-50"
+      >
+        GitHub
+      </a>
     </div>
   </section>
-</Base>
+
+  <section class="mt-16">
+    <h2 class="text-2xl font-semibold text-slate-900">What I help with</h2>
+
+    <div class="mt-6 grid gap-6 lg:grid-cols-3">
+      <div class="grid gap-6 lg:col-span-2 lg:grid-cols-2">
+        <Card
+          title="Automation and tooling"
+          body="Turn multi-hour chores into a button. Or a scheduled job. Same vibe."
+        >
+          <div class="flex flex-wrap gap-2">
+            <Tag label="PowerShell" />
+            <Tag label="Python" />
+            <Tag label="CI/CD" />
+          </div>
+        </Card>
+
+        <Card
+          title="AD, DNS, upgrades, hardening"
+          body="Because identity breaks in creative ways."
+        >
+          <div class="flex flex-wrap gap-2">
+            <Tag label="Windows" />
+            <Tag label="Identity" />
+          </div>
+        </Card>
+
+        <Card
+          title="Architecture and migrations"
+          body="Make it stable, then make it cheaper. In that order."
+        >
+          <div class="flex flex-wrap gap-2">
+            <Tag label="Infra" />
+            <Tag label="Cloud" />
+          </div>
+        </Card>
+      </div>
+
+      <aside class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <h3 class="text-sm font-semibold text-slate-900">Quick links</h3>
+        <div class="mt-3 grid gap-2 text-sm">
+          <a class="no-underline text-slate-700 hover:text-slate-900" href={site.links.portfolio}>Portfolio</a>
+          <a class="no-underline text-slate-700 hover:text-slate-900" href={site.links.github}>GitHub</a>
+        </div>
+
+        <div class="my-6 border-t border-slate-200"></div>
+
+        <h3 class="text-sm font-semibold text-slate-900">Get in touch</h3>
+        <a
+          href={site.links.contact}
+          class="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white no-underline hover:bg-slate-800"
+        >
+          Contact for quote
+        </a>
+        <p class="mt-3 text-xs leading-5 text-slate-500">
+          Rate depends on scope. Send a problem statement and constraints.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="mt-16">
+    <div class="grid gap-6 lg:grid-cols-3">
+      <div class="lg:col-span-2 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl font-semibold text-slate-900">How I work</h2>
+          <span class="text-xs text-slate-500">simple, explicit, testable</span>
+        </div>
+
+        <ol class="mt-6 grid gap-3 text-sm text-slate-600">
+          <li>1) Define scope</li>
+          <li>2) Ship increments</li>
+          <li>3) Add guardrails</li>
+          <li>4) Document everything</li>
+          <li>5) Hand-off</li>
+        </ol>
+
+        <p class="mt-6 text-sm text-slate-700">
+          If it cannot be repeated, it is not done.
+        </p>
+      </div>
+
+      <aside class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <h3 class="text-sm font-semibold text-slate-900">Get in touch</h3>
+        <a
+          href={site.links.contact}
+          class="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white no-underline hover:bg-slate-800"
+        >
+          Contact for quote
+        </a>
+        <p class="mt-3 text-xs leading-5 text-slate-500">
+          Rate depends on scope. Send a problem statement and constraints.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="mt-16">
+    <div class="flex items-center justify-between">
+      <h2 class="text-2xl font-semibold text-slate-900">Featured work</h2>
+      <span class="text-xs text-slate-500">anonymized, on purpose</span>
+    </div>
+
+    <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div class="flex items-start justify-between gap-6">
+        <div>
+          <h3 class="text-base font-semibold text-slate-900">
+            High-volume Windows file transfer automation
+          </h3>
+          <p class="mt-2 text-sm text-slate-600">
+            Moved large file sets reliably using an input list, with progress reporting and restartable execution.
+          </p>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <Tag label="Client" />
+            <Tag label="PowerShell" />
+            <Tag label="Windows Server" />
+            <Tag label="File Ops" />
+          </div>
+        </div>
+
+        <a
+          href="/work"
+          class="mt-1 text-sm font-semibold text-slate-700 no-underline hover:text-slate-900"
+          title="View case studies"
+        >
+          ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-16 flex items-center justify-between border-t border-slate-200 py-8 text-sm text-slate-500">
+    <span>© {new Date().getFullYear()} vertex_chaos</span>
+    <div class="flex gap-6">
+      <a class="no-underline hover:text-slate-900" href="/about">About</a>
+      <a class="no-underline hover:text-slate-900" href="/privacy">Privacy</a>
+    </div>
+  </footer>
+</BaseLayout>

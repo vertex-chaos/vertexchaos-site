@@ -1,19 +1,19 @@
 export const site = {
   brand: "vertex_chaos",
-  companyName: "VERTEX CONSULTING HOLISTIC ADVISORY OPERATIONS SOLUTIONS",
-  domain: "vertexchaos.com",
-  email: "hello@vertexchaos.com",
-  timezone: "America/Los_Angeles",
-  tagline: "Infra + automation. Built to last. Documented on purpose.",
-  lede: "Consulting work that reduces pager noise, makes migrations boring, and turns tribal knowledge into runbooks.",
-  social: {
-    // Set this once your GitHub org exists (example: https://github.com/vertex-chaos)
-    githubOrgBase: "https://github.com/vertex-chaos",
-    // Optional (can be your personal profile even if repos are in the org)
-    linkedin: "https://www.linkedin.com/in/PROFILE_SLUG"
+  domainLabel: "vertexchaos.com — consulting",
+  headline: "Infrastructure that works.\nDocumented on purpose.",
+  subhead:
+    "Consulting work that reduces noise, makes migrations boring, and turns tribal knowledge into runbooks. Simple, explicit, testable.",
+  links: {
+    email: "mailto:automation@vertexchaos.com",
+    github: "https://github.com/vertex-chaos",
+    portfolio: "/work",
+    contact: "/contact",
   },
-  cta: {
-    primary: "Email me",
-    mailtoSubject: "Vertex Chaos inquiry"
-  }
+  nav: [
+    { label: "Services", href: "/services" },
+    { label: "Work", href: "/work" },
+    { label: "Repos", href: "/repos" },
+    { label: "About", href: "/about" },
+  ],
 };
