@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { site as DefaultSite } from "../../config/site";
 import Tag from "../../components/Tag.astro";
+import { site } from "../../config/site";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
@@ -13,26 +13,24 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const site = DefaultSite;
-
 const { Content } = await entry.render();
-const data = entry.data ?? {};
+const d = entry.data ?? {};
 ---
 
-<BaseLayout title={`${data.title ?? "Work"} | ${site.brand}`} description={data.summary ?? site.subhead}>
+<BaseLayout title={`${d.title ?? "Work"} | ${site.brand}`} description={d.summary ?? site.subhead}>
   <div class="flex items-center gap-2 text-sm text-slate-500">
-    <a class="no-underline hover:text-slate-900" href="/work">Work</a>
+    <a class="no-underline hover:text-slate-900" href="/work/">Work</a>
     <span class="text-slate-300">/</span>
-    <span>{data.title ?? entry.slug}</span>
+    <span>{d.title ?? entry.slug}</span>
   </div>
 
   <article class="prose prose-slate mt-8 max-w-none">
-    <h1>{data.title ?? entry.slug}</h1>
+    <h1>{d.title ?? entry.slug}</h1>
 
-    {data.summary && <p class="text-slate-600">{data.summary}</p>}
+    {d.summary && <p class="text-slate-600">{d.summary}</p>}
 
     <div class="mt-6 flex flex-wrap gap-2">
-      {Array.isArray(data.tags) && data.tags.map((t) => <Tag label={t} />)}
+      {Array.isArray(d.tags) && d.tags.map((t) => <Tag label={t} />)}
     </div>
 
     <div class="mt-10">
@@ -40,7 +38,7 @@ const data = entry.data ?? {};
     </div>
 
     <div class="mt-12 flex items-center justify-between border-t border-slate-200 pt-6 text-sm">
-      <a class="no-underline hover:underline" href="/work">← Back to Work</a>
+      <a class="no-underline hover:underline" href="/work/">← Back to Work</a>
       <a class="no-underline hover:underline" href={site.githubOrgBase}>GitHub →</a>
     </div>
   </article>
