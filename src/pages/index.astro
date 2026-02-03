@@ -1,186 +1,147 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { site } from "../config/site";
-import Card from "../components/Card.astro";
-import Tag from "../components/Tag.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { site, mailtoLink } from "@/config/site";
+import { intro, tagline, services, processSteps } from "@/config/content";
+import { getCollection } from "astro:content";
 
-const title = "vertex_chaos";
+const work = (await getCollection("work")).slice(0, 3);
 ---
 
-<BaseLayout title={title} description={site.subhead}>
-  <div class="flex items-center gap-2 text-sm text-slate-500">
-    <span class="text-slate-400">●</span>
-    <span>{site.domainLabel}</span>
-  </div>
-
-  <section class="mt-10">
-    <h1 class="whitespace-pre-line text-5xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
-      {site.headline}
-    </h1>
-    <p class="mt-6 max-w-2xl text-base leading-7 text-slate-600">
-      {site.subhead}
-    </p>
-
-    <div class="mt-8 flex flex-wrap gap-3">
-      <a
-        href={site.links.email}
-        class="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white no-underline hover:bg-slate-800"
-      >
-        Email me
-      </a>
-
-      <a
-        href={site.links.portfolio}
-        class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 no-underline hover:bg-slate-50"
-      >
-        Portfolio
-      </a>
-
-      <a
-        href={site.links.github}
-        class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 no-underline hover:bg-slate-50"
-      >
-        GitHub
-      </a>
-    </div>
-  </section>
-
-  <section class="mt-16">
-    <h2 class="text-2xl font-semibold text-slate-900">What I help with</h2>
-
-    <div class="mt-6 grid gap-6 lg:grid-cols-3">
-      <div class="grid gap-6 lg:col-span-2 lg:grid-cols-2">
-        <Card
-          title="Automation and tooling"
-          body="Turn multi-hour chores into a button. Or a scheduled job. Same vibe."
-        >
-          <div class="flex flex-wrap gap-2">
-            <Tag label="PowerShell" />
-            <Tag label="Python" />
-            <Tag label="CI/CD" />
-          </div>
-        </Card>
-
-        <Card
-          title="AD, DNS, upgrades, hardening"
-          body="Because identity breaks in creative ways."
-        >
-          <div class="flex flex-wrap gap-2">
-            <Tag label="Windows" />
-            <Tag label="Identity" />
-          </div>
-        </Card>
-
-        <Card
-          title="Architecture and migrations"
-          body="Make it stable, then make it cheaper. In that order."
-        >
-          <div class="flex flex-wrap gap-2">
-            <Tag label="Infra" />
-            <Tag label="Cloud" />
-          </div>
-        </Card>
-      </div>
-
-      <aside class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-sm font-semibold text-slate-900">Quick links</h3>
-        <div class="mt-3 grid gap-2 text-sm">
-          <a class="no-underline text-slate-700 hover:text-slate-900" href={site.links.portfolio}>Portfolio</a>
-          <a class="no-underline text-slate-700 hover:text-slate-900" href={site.links.github}>GitHub</a>
-        </div>
-
-        <div class="my-6 border-t border-slate-200"></div>
-
-        <h3 class="text-sm font-semibold text-slate-900">Get in touch</h3>
-        <a
-          href={site.links.contact}
-          class="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white no-underline hover:bg-slate-800"
-        >
-          Contact for quote
-        </a>
-        <p class="mt-3 text-xs leading-5 text-slate-500">
-          Rate depends on scope. Send a problem statement and constraints.
-        </p>
-      </aside>
-    </div>
-  </section>
-
-  <section class="mt-16">
-    <div class="grid gap-6 lg:grid-cols-3">
-      <div class="lg:col-span-2 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-        <div class="flex items-center justify-between">
-          <h2 class="text-2xl font-semibold text-slate-900">How I work</h2>
-          <span class="text-xs text-slate-500">simple, explicit, testable</span>
-        </div>
-
-        <ol class="mt-6 grid gap-3 text-sm text-slate-600">
-          <li>1) Define scope</li>
-          <li>2) Ship increments</li>
-          <li>3) Add guardrails</li>
-          <li>4) Document everything</li>
-          <li>5) Hand-off</li>
-        </ol>
-
-        <p class="mt-6 text-sm text-slate-700">
-          If it cannot be repeated, it is not done.
-        </p>
-      </div>
-
-      <aside class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-sm font-semibold text-slate-900">Get in touch</h3>
-        <a
-          href={site.links.contact}
-          class="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white no-underline hover:bg-slate-800"
-        >
-          Contact for quote
-        </a>
-        <p class="mt-3 text-xs leading-5 text-slate-500">
-          Rate depends on scope. Send a problem statement and constraints.
-        </p>
-      </aside>
-    </div>
-  </section>
-
-  <section class="mt-16">
-    <div class="flex items-center justify-between">
-      <h2 class="text-2xl font-semibold text-slate-900">Featured work</h2>
-      <span class="text-xs text-slate-500">anonymized, on purpose</span>
-    </div>
-
-    <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <div class="flex items-start justify-between gap-6">
-        <div>
-          <h3 class="text-base font-semibold text-slate-900">
-            High-volume Windows file transfer automation
-          </h3>
-          <p class="mt-2 text-sm text-slate-600">
-            Moved large file sets reliably using an input list, with progress reporting and restartable execution.
+<BaseLayout
+  title={`${site.name} | Automation & DevOps`}
+  description="Automation, DevOps, CI/CD, IaC, PowerShell, Python, and infrastructure reliability."
+>
+  <section class="vc-container pt-14">
+    <div class="vc-card p-8 md:p-10">
+      <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+        <div class="space-y-4 md:max-w-2xl">
+          <p class="vc-pill">Friendly technical. Public-safe. Deliverable-driven.</p>
+          <h1 class="text-3xl font-semibold tracking-tight md:text-4xl">
+            {intro.headline}
+          </h1>
+          <p class="text-base md:text-lg" style="color: var(--color-app-muted);">
+            {intro.subhead}
           </p>
 
-          <div class="mt-4 flex flex-wrap gap-2">
-            <Tag label="Client" />
-            <Tag label="PowerShell" />
-            <Tag label="Windows Server" />
-            <Tag label="File Ops" />
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a class="vc-btn vc-btn-primary" href={mailtoLink}>Contact for quote</a>
+            <a class="vc-btn" href="/work">View work</a>
+            <a class="vc-btn" href="/resume">View resume</a>
           </div>
+
+          <p class="pt-2 text-sm" style="color: var(--color-app-muted);">
+            {tagline}
+          </p>
         </div>
 
-        <a
-          href="/work"
-          class="mt-1 text-sm font-semibold text-slate-700 no-underline hover:text-slate-900"
-          title="View case studies"
-        >
-          ↗
-        </a>
+        <div class="grid gap-3 md:w-[260px]">
+          {intro.proof.map((p) => (
+            <div class="rounded-2xl border p-4" style="border-color: var(--color-app-border); background: color-mix(in oklab, white 2.5%, transparent);">
+              <div class="text-xs" style="color: var(--color-app-muted);">{p.label}</div>
+              <div class="text-base font-semibold">{p.value}</div>
+            </div>
+          ))}
+          <div class="rounded-2xl border p-4" style="border-color: var(--color-app-border); background: color-mix(in oklab, white 2.5%, transparent);">
+            <div class="text-xs" style="color: var(--color-app-muted);">Email</div>
+            <a class="vc-link text-sm" href={mailtoLink}>{site.contactEmail}</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 grid gap-3 md:grid-cols-2">
+        {intro.bullets.map((b) => (
+          <div class="flex items-start gap-3 rounded-2xl border p-4" style="border-color: var(--color-app-border); background: color-mix(in oklab, white 2.5%, transparent);">
+            <span aria-hidden="true" class="mt-1 inline-flex h-2.5 w-2.5 rounded-full" style="background: var(--color-vertex-500);"></span>
+            <div class="text-sm" style="color: var(--color-app-muted);">{b}</div>
+          </div>
+        ))}
       </div>
     </div>
   </section>
 
-  <footer class="mt-16 flex items-center justify-between border-t border-slate-200 py-8 text-sm text-slate-500">
-    <span>© {new Date().getFullYear()} vertex_chaos</span>
-    <div class="flex gap-6">
-      <a class="no-underline hover:text-slate-900" href="/about">About</a>
-      <a class="no-underline hover:text-slate-900" href="/privacy">Privacy</a>
+  <section class="vc-container mt-14">
+    <div class="flex items-end justify-between gap-6">
+      <div class="space-y-2">
+        <h2 class="text-xl font-semibold">Services</h2>
+        <p class="text-sm" style="color: var(--color-app-muted);">
+          Clear scope, predictable delivery, documentation included.
+        </p>
+      </div>
+      <a class="vc-btn" href="/services">All services</a>
     </div>
-  </footer>
+
+    <div class="mt-6 grid gap-5 md:grid-cols-2">
+      {services.map((s) => (
+        <div class="vc-card p-6">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-base font-semibold">{s.title}</h3>
+            <div class="flex flex-wrap gap-2 justify-end">
+              {s.tags.slice(0, 2).map((t) => <span class="vc-pill">{t}</span>)}
+            </div>
+          </div>
+          <p class="mt-2 text-sm" style="color: var(--color-app-muted);">{s.blurb}</p>
+          <ul class="mt-4 space-y-2 text-sm" style="color: var(--color-app-muted);">
+            {s.deliverables.slice(0, 3).map((d) => <li>• {d}</li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="vc-container mt-14">
+    <h2 class="text-xl font-semibold">How I work</h2>
+    <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+      No drama. Just outcomes, constraints, milestones, and docs.
+    </p>
+
+    <div class="mt-6 grid gap-5 md:grid-cols-2">
+      {processSteps.map((p, idx) => (
+        <div class="vc-card p-6">
+          <div class="flex items-center gap-3">
+            <span class="vc-kbd">Step {idx + 1}</span>
+            <h3 class="text-base font-semibold">{p.title}</h3>
+          </div>
+          <p class="mt-2 text-sm" style="color: var(--color-app-muted);">{p.text}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="vc-container mt-14">
+    <div class="flex items-end justify-between gap-6">
+      <div class="space-y-2">
+        <h2 class="text-xl font-semibold">Selected work</h2>
+        <p class="text-sm" style="color: var(--color-app-muted);">
+          Public-safe summaries (no names, no identifiable details).
+        </p>
+      </div>
+      <a class="vc-btn" href="/work">All work</a>
+    </div>
+
+    <div class="mt-6 grid gap-5 md:grid-cols-3">
+      {work.map((w) => (
+        <a href={`/work/${w.slug}`} class="vc-card block p-6">
+          <h3 class="text-base font-semibold">{w.data.title}</h3>
+          <p class="mt-2 text-sm" style="color: var(--color-app-muted);">{w.data.excerpt}</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            {w.data.stack.slice(0, 3).map((t) => <span class="vc-pill">{t}</span>)}
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="vc-container mt-14 pb-20">
+    <div class="vc-card p-8 md:p-10">
+      <h2 class="text-xl font-semibold">Want this kind of calm in your infrastructure?</h2>
+      <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+        Send context, constraints, and what “done” means. I’ll respond with a plan and clear deliverables.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a class="vc-btn vc-btn-primary" href={mailtoLink}>Contact for quote</a>
+        <a class="vc-btn" href="/contact">What to send</a>
+        <a class="vc-btn" href="/upwork">Upwork materials</a>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

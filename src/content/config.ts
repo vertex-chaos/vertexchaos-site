@@ -1,17 +1,13 @@
 import { defineCollection, z } from "astro:content";
 
-const caseStudies = defineCollection({
+const work = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
-    summary: z.string(),
-    tags: z.array(z.string()).default([]),
-    when: z.string().optional(),
-    repo: z.string().optional(),
-    kind: z.enum(["client", "lab", "open-source"]).default("client"),
+    excerpt: z.string(),
+    stack: z.array(z.string()).default([]),
+    outcomes: z.array(z.string()).default([]),
   }),
 });
 
-export const collections = {
-  "case-studies": caseStudies,
-};
+export const collections = { work };

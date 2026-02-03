@@ -1,0 +1,49 @@
+---
+import { site, mailtoLink } from "@/config/site";
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-16 border-t" style="border-color: var(--color-app-border);">
+  <div class="vc-container py-10">
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="space-y-3">
+        <div class="text-sm font-semibold">{site.name}</div>
+        <p class="text-sm" style="color: var(--color-app-muted);">
+          {site.legalName}
+        </p>
+        <p class="text-xs" style="color: var(--color-app-muted);">
+          © {year}. All rights reserved.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <div class="text-sm font-semibold">Links</div>
+        <ul class="space-y-2 text-sm" style="color: var(--color-app-muted);">
+          <li><a href="/services">Services</a></li>
+          <li><a href="/work">Work</a></li>
+          <li><a href="/resume">Resume</a></li>
+          <li><a href="/upwork">Upwork</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/legal">Legal</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-3">
+        <div class="text-sm font-semibold">Contact</div>
+        <p class="text-sm" style="color: var(--color-app-muted);">
+          Email: <a class="vc-link" href={mailtoLink}>{site.contactEmail}</a>
+        </p>
+        <p class="text-sm" style="color: var(--color-app-muted);">
+          LinkedIn: <a class="vc-link" href={site.linkedinUrl} target="_blank" rel="noreferrer">Profile</a>
+        </p>
+        <p class="text-sm" style="color: var(--color-app-muted);">
+          GitHub: <a class="vc-link" href={site.githubUrl} target="_blank" rel="noreferrer">vertex-chaos</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-8 text-xs" style="color: var(--color-app-muted);">
+      This site intentionally avoids client names, employer names, and identifiable project details.
+    </div>
+  </div>
+</footer>

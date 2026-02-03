@@ -1,14 +1,74 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { site } from "../config/site";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { site, mailtoLink } from "@/config/site";
+import { contactNeeds } from "@/config/content";
+import { upwork } from "@/config/upwork";
 ---
-<BaseLayout title="Contact | vertex_chaos">
-  <h1 class="text-3xl font-semibold">Contact</h1>
-  <p class="mt-4 text-slate-600">Email is fastest.</p>
-  <a
-    href={site.links.email}
-    class="mt-6 inline-flex rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white no-underline hover:bg-slate-800"
-  >
-    Email me
-  </a>
+
+<BaseLayout title={`${site.name} | Contact`} description="Contact for quote (mailto) and what to send to get an accurate scope and timeline.">
+  <section class="vc-container pt-14">
+    <h1 class="text-2xl font-semibold">Contact</h1>
+    <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+      Email is the fastest way to get to a scope and timeline without turning it into a meeting festival.
+    </p>
+
+    <div class="mt-8 grid gap-6 md:grid-cols-2">
+      <div class="vc-card p-7 md:p-8">
+        <h2 class="text-lg font-semibold">Email</h2>
+        <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+          <a class="vc-link" href={mailtoLink}>{site.contactEmail}</a>
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a class="vc-btn vc-btn-primary" href={mailtoLink}>Contact for quote</a>
+          <a class="vc-btn" href="/services">Services</a>
+        </div>
+
+        <div class="mt-6 rounded-2xl border p-5" style="border-color: var(--color-app-border); background: color-mix(in oklab, white 2.5%, transparent);">
+          <div class="text-sm font-semibold">Template</div>
+          <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+            Subject: [Your project] scope + timeline<br />
+            1) Environment: ...<br />
+            2) Problem: ...<br />
+            3) Constraints: ...<br />
+            4) Deliverables: ...<br />
+            5) Success criteria: ...<br />
+            6) Access method: ...
+          </p>
+        </div>
+      </div>
+
+      <div class="vc-card p-7 md:p-8">
+        <h2 class="text-lg font-semibold">What I need from you</h2>
+        <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+          The more concrete this is, the faster we get to a real quote.
+        </p>
+        <ul class="mt-4 space-y-2 text-sm" style="color: var(--color-app-muted);">
+          {contactNeeds.map((n) => <li>• {n}</li>)}
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-10 vc-card p-7 md:p-8">
+      <h2 class="text-lg font-semibold">Discovery questions (before quoting)</h2>
+      <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+        These prevent scope drift and “surprise requirements”.
+      </p>
+      <ul class="mt-4 grid gap-2 md:grid-cols-2 text-sm" style="color: var(--color-app-muted);">
+        {upwork.discoveryQuestions.map((q) => <li>• {q}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="vc-container mt-14 pb-20">
+    <div class="vc-card p-8 md:p-10">
+      <h2 class="text-xl font-semibold">Prefer GitHub?</h2>
+      <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+        Links are in the footer. Send the repo and current behavior, and I’ll propose a plan that won’t melt later.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a class="vc-btn vc-btn-primary" href={mailtoLink}>Contact for quote</a>
+        <a class="vc-btn" href="/work">Work</a>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

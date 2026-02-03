@@ -1,20 +1,117 @@
 @import "tailwindcss";
 
-/* then your layers / @apply stuff */
-@layer base {
-  :root {
-    color-scheme: light;
-  }
+/* Tailwind v4 CSS-first tokens */
+@theme {
+  --color-app-bg: #0b0f14;
+  --color-app-surface: #0f1720;
+  --color-app-surface-2: #111b26;
+  --color-app-border: rgba(255, 255, 255, 0.08);
 
-  html, body {
-    height: 100%;
-  }
+  --color-app-text: rgba(255, 255, 255, 0.92);
+  --color-app-muted: rgba(255, 255, 255, 0.68);
+
+  /* darker, calmer green (ChatGPT-ish, but less neon) */
+  --color-vertex-400: #22c55e;
+  --color-vertex-500: #0b6b46;
+  --color-vertex-600: #084f35;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans",
+    "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+@layer base {
+  :root { color-scheme: dark; }
+
+  html, body { height: 100%; }
 
   body {
-    @apply bg-white text-slate-900 antialiased;
+    background:
+      radial-gradient(900px 500px at 15% -5%, color-mix(in oklab, var(--color-vertex-500) 25%, transparent), transparent 60%),
+      radial-gradient(700px 420px at 90% 10%, color-mix(in oklab, var(--color-vertex-500) 18%, transparent), transparent 60%),
+      var(--color-app-bg);
+    color: var(--color-app-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
-  a {
-    @apply underline-offset-4;
+  a { color: var(--color-app-text); text-decoration: none; }
+  a:hover { color: white; }
+
+  ::selection { background: color-mix(in oklab, var(--color-vertex-500) 40%, transparent); }
+
+  hr { border-color: var(--color-app-border); }
+}
+
+@layer components {
+  .vc-container { @apply mx-auto max-w-5xl px-5; }
+
+  .vc-card {
+    background: linear-gradient(180deg,
+      color-mix(in oklab, white 4%, transparent),
+      color-mix(in oklab, white 1.5%, transparent)
+    );
+    border: 1px solid var(--color-app-border);
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
   }
+
+  .vc-pill {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium;
+    border: 1px solid var(--color-app-border);
+    background: color-mix(in oklab, white 3%, transparent);
+    color: var(--color-app-muted);
+  }
+
+  .vc-link {
+    @apply underline underline-offset-4;
+    color: color-mix(in oklab, var(--color-vertex-400) 85%, white);
+  }
+  .vc-link:hover { color: white; }
+
+  .vc-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-semibold;
+    border: 1px solid var(--color-app-border);
+    background: color-mix(in oklab, white 3%, transparent);
+    color: var(--color-app-text);
+    transition: transform 120ms ease, background-color 120ms ease, border-color 120ms ease;
+  }
+  .vc-btn:hover {
+    background: color-mix(in oklab, white 6%, transparent);
+    border-color: color-mix(in oklab, var(--color-app-border) 60%, white);
+    transform: translateY(-1px);
+  }
+  .vc-btn:active { transform: translateY(0px); }
+
+  .vc-btn-primary {
+    background: linear-gradient(180deg,
+      color-mix(in oklab, var(--color-vertex-500) 90%, black),
+      color-mix(in oklab, var(--color-vertex-600) 92%, black)
+    );
+    border-color: color-mix(in oklab, var(--color-vertex-600) 65%, white);
+  }
+  .vc-btn-primary:hover {
+    background: linear-gradient(180deg,
+      color-mix(in oklab, var(--color-vertex-500) 100%, black),
+      color-mix(in oklab, var(--color-vertex-600) 100%, black)
+    );
+    border-color: color-mix(in oklab, var(--color-vertex-600) 75%, white);
+  }
+
+  .vc-kbd {
+    @apply rounded-md px-2 py-1 text-xs;
+    font-family: var(--font-mono);
+    background: color-mix(in oklab, white 4%, transparent);
+    border: 1px solid var(--color-app-border);
+    color: var(--color-app-muted);
+  }
+.vc-prose h2 { @apply mt-7 text-lg font-semibold; }
+.vc-prose p { @apply mt-3 text-sm leading-relaxed; color: var(--color-app-muted); }
+.vc-prose ul { @apply mt-3 space-y-2 pl-4; color: var(--color-app-muted); }
+.vc-prose li { @apply list-disc text-sm; }
+.vc-prose blockquote { @apply mt-4 border-l-2 pl-4 text-sm; border-color: var(--color-app-border); color: var(--color-app-muted); }
 }

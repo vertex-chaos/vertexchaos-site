@@ -1,12 +1,9 @@
-import { defineConfig } from 'astro/config';
-
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  site: 'https://vertexchaos.com',
-  trailingSlash: 'never',
-
+  site: process.env.PUBLIC_SITE_URL || "https://vertexchaos.com",
   vite: {
-    plugins: [tailwindcss()]
-  }
+    plugins: [tailwindcss()],
+  },
 });

@@ -1,0 +1,50 @@
+site_name: "VertexChaos Local Code Wiki"
+site_description: "Local, repo-contained docs for the vertexchaos.com Astro site."
+site_url: "https://vertexchaos.com/docs/"
+repo_url: "https://github.com/vertex-chaos/vertexchaos-site"
+repo_name: "vertex-chaos/vertexchaos-site"
+edit_uri: "edit/main/"
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.tracking
+    - content.action.edit
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: black
+      accent: green
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home: index.md
+  - Architecture Overview: architecture.md
+  - Request/Flow Map: flow-map.md
+  - Operations Runbook: runbook.md
+  - Deployment (Cloudflare Pages): deployment.md
+  - Diagrams: diagrams.md

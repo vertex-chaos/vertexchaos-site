@@ -1,12 +1,20 @@
 ---
-import Base from "../layouts/Base.astro";
-import { site } from "../config/site";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { site } from "@/config/site";
 ---
-<Base title={`404 | ${site.brand}`} description="Page not found.">
-  <div class="card pad">
-    <div class="kicker"><span class="dot"></span><span>404</span><span class="badge">not found</span></div>
-    <h1>Page not found</h1>
-    <p class="lede">This page doesn’t exist. Either you mistyped it, or it migrated and didn’t file its forwarding address.</p>
-    <a class="btn primary" href="/">Go home</a>
-  </div>
-</Base>
+
+<BaseLayout title={`${site.name} | Not found`} noindex={true}>
+  <section class="vc-container pt-14 pb-20">
+    <div class="vc-card p-8 md:p-10">
+      <h1 class="text-2xl font-semibold">404</h1>
+      <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+        That page doesn’t exist. Probably for the best.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a class="vc-btn vc-btn-primary" href="/">Home</a>
+        <a class="vc-btn" href="/services">Services</a>
+        <a class="vc-btn" href="/contact">Contact</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

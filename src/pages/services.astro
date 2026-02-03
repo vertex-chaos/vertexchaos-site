@@ -1,7 +1,80 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { site, mailtoLink } from "@/config/site";
+import { services } from "@/config/content";
 ---
-<BaseLayout title="Services | vertex_chaos">
-  <h1 class="text-3xl font-semibold">Services</h1>
-  <p class="mt-4 text-slate-600">Coming soon.</p>
+
+<BaseLayout title={`${site.name} | Services`} description="Services: CI/CD, IaC, automation, AD modernization, cloud deployments, internal tooling.">
+  <section class="vc-container pt-14">
+    <h1 class="text-2xl font-semibold">Services</h1>
+    <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+      Practical engineering with clear deliverables. No client names, no screenshots of internal systems, no drama.
+    </p>
+
+    <div class="mt-8 grid gap-6">
+      {services.map((s) => (
+        <div class="vc-card p-7 md:p-8">
+          <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+            <div class="space-y-2 md:max-w-3xl">
+              <h2 class="text-lg font-semibold">{s.title}</h2>
+              <p class="text-sm" style="color: var(--color-app-muted);">{s.blurb}</p>
+            </div>
+            <div class="flex flex-wrap gap-2 md:justify-end">
+              {s.tags.map((t) => <span class="vc-pill">{t}</span>)}
+            </div>
+          </div>
+
+          <div class="mt-6 grid gap-4 md:grid-cols-2">
+            <div>
+              <div class="text-sm font-semibold">Typical deliverables</div>
+              <ul class="mt-2 space-y-2 text-sm" style="color: var(--color-app-muted);">
+                {s.deliverables.map((d) => <li>• {d}</li>)}
+              </ul>
+            </div>
+
+            <div>
+              <div class="text-sm font-semibold">How it’s delivered</div>
+              <ul class="mt-2 space-y-2 text-sm" style="color: var(--color-app-muted);">
+                <li>• Milestone-based plan (3–6 steps)</li>
+                <li>• Reviewable changes (PRs + notes)</li>
+                <li>• Documentation included (runbooks + diagrams)</li>
+                <li>• Handoff that doesn’t leave your team guessing</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a class="vc-btn vc-btn-primary" href={mailtoLink}>Contact for quote</a>
+            <a class="vc-btn" href="/contact">What I need from you</a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-14 vc-card p-7 md:p-8">
+      <h2 class="text-lg font-semibold">Engagement style</h2>
+      <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+        Best results come from clarity. If you can provide access + constraints, I can deliver repeatable automation quickly.
+      </p>
+      <ul class="mt-4 space-y-2 text-sm" style="color: var(--color-app-muted);">
+        <li>• Clear deliverables, scope boundaries, and success criteria</li>
+        <li>• Written documentation as a first-class output</li>
+        <li>• Secure handling of secrets and access</li>
+        <li>• “Make it maintainable” bias, not clever hacks</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="vc-container mt-14 pb-20">
+    <div class="vc-card p-8 md:p-10">
+      <h2 class="text-xl font-semibold">Ready to make this boring?</h2>
+      <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+        Send a short brief and constraints. I’ll reply with a plan and timeline.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a class="vc-btn vc-btn-primary" href={mailtoLink}>Contact for quote</a>
+        <a class="vc-btn" href="/work">See examples</a>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

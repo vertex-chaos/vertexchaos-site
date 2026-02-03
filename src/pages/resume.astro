@@ -1,0 +1,104 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { site, mailtoLink } from "@/config/site";
+import { resumePublic } from "@/config/resume_public";
+---
+
+<BaseLayout title={`${site.name} | Resume`} description="Public-safe resume summary (scrollable) and PDF.">
+  <section class="vc-container pt-14">
+    <div class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
+      <div class="space-y-4 md:max-w-2xl">
+        <h1 class="text-2xl font-semibold">Resume</h1>
+        <p class="text-sm" style="color: var(--color-app-muted);">
+          Public-safe version: no employer names, no client names, no identifiable role titles.
+        </p>
+
+        <div class="vc-card p-6">
+          <div class="text-sm font-semibold">{resumePublic.name}</div>
+          <div class="mt-1 text-sm" style="color: var(--color-app-muted);">{resumePublic.location}</div>
+          <div class="mt-3 flex flex-wrap gap-3">
+            <a class="vc-btn vc-btn-primary" href={mailtoLink}>Contact for quote</a>
+            <a class="vc-btn" href="/assets/jose-valdes-public-cv.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+            <a class="vc-btn" href="/assets/jose-valdes-public-cv.pdf" download>Download PDF</a>
+          </div>
+          <p class="mt-4 text-sm" style="color: var(--color-app-muted);">
+            {resumePublic.note}
+          </p>
+        </div>
+
+        <div class="vc-card p-6">
+          <div class="text-sm font-semibold">Summary</div>
+          <ul class="mt-3 space-y-2 text-sm" style="color: var(--color-app-muted);">
+            {resumePublic.summary.map((s) => <li>• {s}</li>)}
+          </ul>
+        </div>
+
+        <div class="vc-card p-6">
+          <div class="text-sm font-semibold">Skills</div>
+          <div class="mt-3 flex flex-wrap gap-2">
+            {resumePublic.skills.map((s) => <span class="vc-pill">{s}</span>)}
+          </div>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2">
+          <div class="vc-card p-6">
+            <div class="text-sm font-semibold">Education</div>
+            <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+              {resumePublic.education.degree} • {resumePublic.education.school} • {resumePublic.education.year}
+            </p>
+          </div>
+
+          <div class="vc-card p-6">
+            <div class="text-sm font-semibold">Languages</div>
+            <ul class="mt-2 space-y-2 text-sm" style="color: var(--color-app-muted);">
+              {resumePublic.languages.map((l) => <li>• {l}</li>)}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:w-[420px]">
+        <div class="vc-card p-6">
+          <div class="flex items-center justify-between">
+            <div class="text-sm font-semibold">Experience timeline</div>
+            <span class="vc-pill">scroll</span>
+          </div>
+
+          <div class="mt-4 max-h-[560px] overflow-auto pr-2">
+            <div class="space-y-5">
+              {resumePublic.timeline.map((t) => (
+                <div class="rounded-2xl border p-4" style="border-color: var(--color-app-border); background: color-mix(in oklab, white 2.5%, transparent);">
+                  <div class="flex items-center justify-between gap-4">
+                    <div class="text-sm font-semibold">{t.period}</div>
+                    <span class="vc-pill">public-safe</span>
+                  </div>
+                  <p class="mt-2 text-sm" style="color: var(--color-app-muted);">{t.focus}</p>
+                  <ul class="mt-3 space-y-2 text-sm" style="color: var(--color-app-muted);">
+                    {t.bullets.map((b) => <li>• {b}</li>)}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div class="mt-5 text-xs" style="color: var(--color-app-muted);">
+            Full detailed resume (with verified context) available upon request.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vc-container mt-14 pb-20">
+    <div class="vc-card p-8 md:p-10">
+      <h2 class="text-xl font-semibold">Need help with infrastructure automation?</h2>
+      <p class="mt-2 text-sm" style="color: var(--color-app-muted);">
+        Send a short brief and I’ll respond with a milestone plan and deliverables.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a class="vc-btn vc-btn-primary" href={mailtoLink}>Contact for quote</a>
+        <a class="vc-btn" href="/contact">What to send</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

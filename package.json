@@ -1,16 +1,21 @@
 {
-  "name": "vertex_chaos_site",
-  "type": "module",
-  "version": "0.2.0",
+  "name": "vertexchaos-site",
   "private": true,
+  "type": "module",
+  "version": "0.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "build": "npm run docs:build && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "docs:build": "node scripts/build-docs.mjs"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.18",
-    "astro": "^5.0.0",
-    "tailwindcss": "^4.1.18"
+    "astro": "5.16.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.1.18",
+    "tailwindcss": "4.1.18",
+    "typescript": "^5.7.0"
   }
 }
