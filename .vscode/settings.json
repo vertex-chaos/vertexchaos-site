@@ -1,0 +1,9 @@
+{
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.tabs.enabled": true,
+  "markdown.preview.breaks": true,
+  "powershell.powerShellDefaultVersion": "Windows PowerShell"
+}
