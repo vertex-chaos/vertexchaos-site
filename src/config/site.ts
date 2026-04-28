@@ -9,15 +9,23 @@
   githubSiteRepo: "vertexchaos-site",
   githubSiteRepoUrl: "https://github.com/vertex-chaos/vertexchaos-site",
 
-  headline: "Infrastructure that works.\nDocumented on purpose.",
+  headline: "Infrastructure automation,\ncloud operations, and practical AI.",
   subhead:
-    "Consulting work that reduces noise, makes migrations boring, and turns tribal knowledge into runbooks. Simple, explicit, testable.",
+    "Practical fixes for small and mid-sized businesses. Windows, Linux, cloud, and hybrid environments. U.S.-based, remote-friendly.",
+
+  trustItems: [
+    "22+ years infrastructure and operations experience",
+    "Upwork 100% Job Success",
+    "U.S.-based, remote-friendly",
+    "PowerShell · Python · Windows · Linux · Cloud",
+  ],
 
   links: {
     email: "mailto:automation@vertexchaos.com",
     github: "https://github.com/vertex-chaos",
     portfolio: "/work",
     contact: "/contact",
+    services: "/services",
   },
 
   nav: [
