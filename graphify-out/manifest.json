@@ -1,0 +1,302 @@
+{
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/astro.config.mjs": {
+    "mtime": 1782723604.073958,
+    "ast_hash": "3adc0485b44c48cd9605cfb61a76b7cd",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/package.json": {
+    "mtime": 1782723604.0759504,
+    "ast_hash": "3da654e5bd7c80a41c56c6568ec1507c",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/scripts/verify.ps1": {
+    "mtime": 1782723604.0768204,
+    "ast_hash": "daee757281ba479bc1b45beb87cf41f9",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/.vscode/extensions.json": {
+    "mtime": 1782723604.073701,
+    "ast_hash": "75070b48d2cac35dcfcfb62fa6e7c173",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/.vscode/settings.json": {
+    "mtime": 1782723604.073958,
+    "ast_hash": "7e4f28c32404be4a8beea2b8b9209e5e",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/.vscode/tasks.json": {
+    "mtime": 1782723604.073958,
+    "ast_hash": "92a0307c3c06f08c7b565b2e4428e262",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/content/config.ts": {
+    "mtime": 1782723604.077616,
+    "ast_hash": "82b9a535accb7bce33fb74d17f65f5da",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/components/Card.astro": {
+    "mtime": 1782723604.077235,
+    "ast_hash": "4ae23b3b361c97b95be95960e9b8a317",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/components/SiteHeader.astro": {
+    "mtime": 1782723604.0772572,
+    "ast_hash": "f6069fe1844a396308ddc999eea1de6c",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/components/Tag.astro": {
+    "mtime": 1782723604.0772572,
+    "ast_hash": "b51a43ded807a378befef5337a742bf8",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/pages/repos.astro": {
+    "mtime": 1782723604.0779123,
+    "ast_hash": "89472b42c0920fc6667c9d14a6f2e2da",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/pages/contact.astro": {
+    "mtime": 1782723604.0779123,
+    "ast_hash": "fcbaec0edcdc65132e3dcff10cfe543e",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/pages/privacy.astro": {
+    "mtime": 1782723604.0779123,
+    "ast_hash": "81128bbd96433993e0d8631c10e0598d",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/pages/about.astro": {
+    "mtime": 1782723604.0779123,
+    "ast_hash": "46266e34a300c66ad261f76326b1d757",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/pages/services.astro": {
+    "mtime": 1782723604.0779123,
+    "ast_hash": "9b844faa40531ec4c68d53a952cb31d3",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/pages/index.astro": {
+    "mtime": 1782723604.0779123,
+    "ast_hash": "cf81de1f7cb104fc9a49cbae0704ad06",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/pages/404.astro": {
+    "mtime": 1782723604.0777733,
+    "ast_hash": "af602780d43ee4e6978e4ae0e4bd2bcc",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/pages/work/[slug].astro": {
+    "mtime": 1782723604.0779123,
+    "ast_hash": "b066dd123a397d60defed1a2c9c13a5f",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/pages/work/index.astro": {
+    "mtime": 1782723604.0784364,
+    "ast_hash": "7d43758da4362260c10f416795cd2315",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/config/site.ts": {
+    "mtime": 1782723604.0772572,
+    "ast_hash": "080326f4ed47396b7cb72ee111fcbdc9",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/layouts/BaseLayout.astro": {
+    "mtime": 1782723604.0777733,
+    "ast_hash": "cf90c262b27956b64b79445183af452c",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/layouts/Base.astro": {
+    "mtime": 1782723604.077616,
+    "ast_hash": "66b4c1be0d2e2aeaf0bd78e13ba16cd8",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/CLAUDE.md": {
+    "mtime": 1782723604.073958,
+    "ast_hash": "c85442b508d5b339dc342545b05c23d9",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/TODO.md": {
+    "mtime": 1782724067.4220269,
+    "ast_hash": "68b02b4b67ea695ed8e68a1abf512138",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/GOALS_TODOS.md": {
+    "mtime": 1782724063.6133912,
+    "ast_hash": "b5014c234b9e0d18eb3ada715ac8bf1b",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/GOALS.md": {
+    "mtime": 1782724080.9354186,
+    "ast_hash": "679c0a0173b33a6fda8613d97641e3a9",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/README.md": {
+    "mtime": 1782723604.073958,
+    "ast_hash": "3f5e02b61fdb29f58df5289a5e260cf9",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/AGENTS.md": {
+    "mtime": 1782723604.073958,
+    "ast_hash": "1aa5c837de95a0ac1bc5033b93924d9e",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/GEMINI.md": {
+    "mtime": 1782723604.073958,
+    "ast_hash": "e7cf82db4d3cc1bedd1502d5c6b8a98f",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/prompts/implementation.md": {
+    "mtime": 1782723604.0768204,
+    "ast_hash": "011b76c1e99090b5588ec6558308b4fc",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/prompts/audit.md": {
+    "mtime": 1782723604.0759504,
+    "ast_hash": "86f00d911a373145319d64a7664fd6a4",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/prompts/report.md": {
+    "mtime": 1782723604.0768204,
+    "ast_hash": "acaaa8d21312d33d0b9f9b256f3afe48",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/prompts/proposal.md": {
+    "mtime": 1782723604.0768204,
+    "ast_hash": "da5cc5b8bc8a7ef473cefe1df48c0ec9",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/public/robots.txt": {
+    "mtime": 1782723604.0768204,
+    "ast_hash": "5e0bd1c281a62a380d7a948085bfe2d1",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/business/pricing.md": {
+    "mtime": 1782723604.0755374,
+    "ast_hash": "bb993fedfa840d416dd40867ea285beb",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/business/offer.md": {
+    "mtime": 1782723604.0755374,
+    "ast_hash": "67d4b8a697c3e94c1f33f2c9e2aa249c",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/business/delivery-checklist.md": {
+    "mtime": 1782723604.075313,
+    "ast_hash": "07f3e891d7bf506a11bce32c3827f378",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/ai/PROJECT_INSTRUCTIONS.md": {
+    "mtime": 1782723604.0750074,
+    "ast_hash": "af362a7999ad948f798459d67c16958b",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/architecture/patterns-and-antipatterns.md": {
+    "mtime": 1782723604.075313,
+    "ast_hash": "94b00e6ea352f6aea327d59bc8e9cd25",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/architecture/overview.md": {
+    "mtime": 1782723604.075313,
+    "ast_hash": "68099301664d69219ff2ceef0f5bfa7f",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/architecture/failure-modes.md": {
+    "mtime": 1782723604.0750074,
+    "ast_hash": "47ac5ff3743dd4528c257931353c709d",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/site/brand-notes.md": {
+    "mtime": 1782723604.0757136,
+    "ast_hash": "0760c165ab54b72b654a5f1b31063162",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/site/homepage-copy.md": {
+    "mtime": 1782723604.0759504,
+    "ast_hash": "2d5a39fad0f367520ae4203762e0ef55",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/project/backlog.md": {
+    "mtime": 1782723604.0755374,
+    "ast_hash": "2668067a4dfbe9a68c00a986c16bc701",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/project/brief.md": {
+    "mtime": 1782723604.0757136,
+    "ast_hash": "bc085edb5fb6aaad6a036b37f7268c7b",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/project/decisions.md": {
+    "mtime": 1782723604.0757136,
+    "ast_hash": "0546a35af117852dad755c2cef42a11b",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/project/operator-commands.md": {
+    "mtime": 1782723604.0757136,
+    "ast_hash": "cd2983c9d2b593c7c4f5ae501dfb5ffa",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/project/plan.md": {
+    "mtime": 1782723604.0757136,
+    "ast_hash": "8623cc9df56ebb383f351e247868085f",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/project/tool-smoke-test-claude.md": {
+    "mtime": 1782723604.0757136,
+    "ast_hash": "9592c34a859c47b8e17d99a1e75ba844",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/docs/project/tool-smoke-test-gemini.md": {
+    "mtime": 1782723604.0757136,
+    "ast_hash": "265e18eca3ca9b82b7f1267173a5ab9c",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/content/case-studies/word-document-automation.md": {
+    "mtime": 1782723604.077616,
+    "ast_hash": "8a3d5eb099e424875fc7614f67b0b455",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/content/case-studies/secure-sftp-ingestion.md": {
+    "mtime": 1782723604.0775843,
+    "ast_hash": "be2d1e85bea1cdb89e02f932fb481f16",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/src/content/case-studies/windows-file-transfer-at-scale.md": {
+    "mtime": 1782723604.077616,
+    "ast_hash": "955ad1f124e8a05b4face91087476e80",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/.github/automation-smoke.txt": {
+    "mtime": 1782723604.0715344,
+    "ast_hash": "d84a278594ec03248dd8868f3a3faf42",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/.github/copilot-instructions.md": {
+    "mtime": 1782723604.0730796,
+    "ast_hash": "ffc1babd1811d0baef380c0733135d06",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/.github/instructions/docs.instructions.md": {
+    "mtime": 1782723604.0730796,
+    "ast_hash": "8195fd3433aef6d22d8a88b29f901ac7",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/.github/instructions/powershell.instructions.md": {
+    "mtime": 1782723604.0733593,
+    "ast_hash": "def9dae68a9bdea73e14dac3c104aaa1",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/.github/instructions/python.instructions.md": {
+    "mtime": 1782723604.0733593,
+    "ast_hash": "87b20635cd78a001cfdd8231dcbbd069",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/.github/workflows/site-build.yml": {
+    "mtime": 1782723604.073701,
+    "ast_hash": "1af5f32336f16a3b8f1a28577c41ab1d",
+    "semantic_hash": ""
+  },
+  "/home/saitama/repos/github/orgs/vertex-chaos/vertexchaos-site/.github/workflows/automation-smoke.yml": {
+    "mtime": 1782723604.0733593,
+    "ast_hash": "476e2da27bb92ab3aa0e9fc2a197f00d",
+    "semantic_hash": ""
+  }
+}
