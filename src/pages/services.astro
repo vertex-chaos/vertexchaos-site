@@ -1,7 +1,201 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../config/site";
+
+const infra = [
+  {
+    title: "AD Health Check + Triage Report",
+    price: "$199",
+    delivery: "2 days",
+    body: "Stale accounts, group membership anomalies, replication status, DNS gaps, GPO conflicts. Written report with prioritized remediation steps.",
+    tags: ["Active Directory", "PowerShell", "Windows Server"],
+  },
+  {
+    title: "GPO Audit + Recommendations",
+    price: "$299",
+    delivery: "3 days",
+    body: "Full audit of Group Policy Objects — redundant policies, conflicting settings, security baseline gaps. Documented findings with fix-or-accept guidance.",
+    tags: ["GPO", "Active Directory", "Security"],
+  },
+  {
+    title: "AD Cleanup Sprint",
+    price: "$499",
+    delivery: "5 days",
+    body: "Stale object removal, account lifecycle fixes, OU restructuring, and documentation of what was done. Safe, staged, with a rollback plan.",
+    tags: ["Active Directory", "PowerShell", "Cleanup"],
+  },
+  {
+    title: "Print Server Consolidation",
+    price: "$599",
+    delivery: "1 week",
+    body: "Migrate printers to a clean server, fix driver chaos, document the final state. One-time project with handoff runbook.",
+    tags: ["Windows Server", "Print Services", "Migration"],
+  },
+  {
+    title: "M365 Security Hardening",
+    price: "$799",
+    delivery: "1 week",
+    body: "Conditional access baseline, MFA enforcement, Defender for Business config, Secure Score improvement. 10-user environments and up.",
+    tags: ["M365", "Entra ID", "Security", "Intune"],
+  },
+];
+
+const retainers = [
+  {
+    title: "Maintenance Retainer",
+    price: "$425/mo",
+    hours: "~4 hrs/month",
+    body: "Monthly AD health check, M365 license audit, backup job review, one automation task. Async updates, no mandatory calls.",
+  },
+  {
+    title: "Active Retainer",
+    price: "$825/mo",
+    hours: "~8 hrs/month",
+    body: "Everything in Maintenance plus two automation tasks and one documentation deliverable per month.",
+  },
+  {
+    title: "Intensive Retainer",
+    price: "$1,600/mo",
+    hours: "~16 hrs/month",
+    body: "Ongoing automation projects, full health checks, runbook writing, and a direct line when something breaks quietly.",
+  },
+];
+
+const ai = [
+  {
+    title: "AI Workflow Integration",
+    price: "from $500",
+    body: "Wire Claude, GPT, or open-source models into your existing ops pipeline using n8n. Summarize, classify, route, or draft — built to your workflow, not a generic chatbot.",
+    tags: ["n8n", "Claude API", "Python", "Automation"],
+  },
+  {
+    title: "n8n Workflow Build or Fix",
+    price: "from $300",
+    body: "Build a new automation workflow from scratch or debug an existing one. API integrations, webhook triggers, error handling, documented delivery.",
+    tags: ["n8n", "API Integration", "Automation"],
+  },
+  {
+    title: "Claude Code Optimization",
+    price: "from $150",
+    body: "Review your current Claude setup — CLAUDE.md, prompts, MCP config, workflow structure — and show you the highest-leverage changes in a single session.",
+    tags: ["Claude Code", "Prompt Engineering", "AI Workflows"],
+  },
+];
 ---
-<BaseLayout title="Services | vertex_chaos">
-  <h1 class="text-3xl font-semibold">Services</h1>
-  <p class="mt-4 text-slate-600">Coming soon.</p>
+
+<BaseLayout title="Services | vertex_chaos" description="Practical IT infrastructure and AI automation services for small and mid-sized businesses. Active Directory, M365, n8n, Claude.">
+
+  <div>
+    <p class="text-sm text-slate-500">services</p>
+    <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900">What I do</h1>
+    <p class="mt-4 max-w-2xl text-slate-600">
+      Fixed-price deliverables and monthly retainers. No vague scopes, no surprise invoices.
+      Hourly rate is {site.rate} for work that does not fit a package.
+    </p>
+  </div>
+
+  <!-- Infrastructure -->
+  <section class="mt-14">
+    <h2 class="text-2xl font-semibold text-slate-900">Infrastructure & Active Directory</h2>
+    <p class="mt-2 text-sm text-slate-500">Fixed-price. Delivered async. No mandatory calls.</p>
+    <div class="mt-6 grid gap-5 lg:grid-cols-2">
+      {infra.map((svc) => (
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col justify-between gap-4">
+          <div>
+            <div class="flex items-start justify-between gap-4">
+              <h3 class="text-base font-semibold text-slate-900">{svc.title}</h3>
+              <div class="text-right shrink-0">
+                <span class="text-lg font-bold text-slate-900">{svc.price}</span>
+                <p class="text-xs text-slate-500">{svc.delivery}</p>
+              </div>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">{svc.body}</p>
+            <div class="mt-3 flex flex-wrap gap-2">
+              {svc.tags.map((t) => (
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">{t}</span>
+              ))}
+            </div>
+          </div>
+          <a href={site.links.contact} class="mt-2 inline-flex w-full items-center justify-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-900 no-underline hover:bg-slate-50">
+            Get started →
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- AI & Automation -->
+  <section class="mt-14">
+    <h2 class="text-2xl font-semibold text-slate-900">AI & Workflow Automation</h2>
+    <p class="mt-2 text-sm text-slate-500">n8n, Claude API, Python. Built for your stack, not a demo.</p>
+    <div class="mt-6 grid gap-5 lg:grid-cols-3">
+      {ai.map((svc) => (
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col justify-between gap-4">
+          <div>
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="text-base font-semibold text-slate-900">{svc.title}</h3>
+              <span class="text-sm font-bold text-slate-900 shrink-0">{svc.price}</span>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">{svc.body}</p>
+            <div class="mt-3 flex flex-wrap gap-2">
+              {svc.tags.map((t) => (
+                <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">{t}</span>
+              ))}
+            </div>
+          </div>
+          <a href={site.links.contact} class="mt-2 inline-flex w-full items-center justify-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-900 no-underline hover:bg-slate-50">
+            Get started →
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Retainers -->
+  <section class="mt-14">
+    <h2 class="text-2xl font-semibold text-slate-900">Monthly Retainers</h2>
+    <p class="mt-2 text-sm text-slate-500">Regular eyes on your environment. Cancel anytime. First month is always a baseline month.</p>
+    <div class="mt-6 grid gap-5 lg:grid-cols-3">
+      {retainers.map((r) => (
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col justify-between gap-4">
+          <div>
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="text-base font-semibold text-slate-900">{r.title}</h3>
+              <div class="text-right shrink-0">
+                <span class="text-lg font-bold text-slate-900">{r.price}</span>
+                <p class="text-xs text-slate-500">{r.hours}</p>
+              </div>
+            </div>
+            <p class="mt-3 text-sm text-slate-600">{r.body}</p>
+          </div>
+          <a href={site.links.contact} class="mt-2 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white no-underline hover:bg-slate-800">
+            Start a retainer →
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Not included -->
+  <section class="mt-14 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+    <h2 class="text-base font-semibold text-slate-900">What I do not take on</h2>
+    <ul class="mt-3 grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
+      <li>Projects without defined requirements</li>
+      <li>Work that skips testing to save time</li>
+      <li>Production access without a change window</li>
+      <li>On-call without on-call pricing</li>
+    </ul>
+  </section>
+
+  <!-- CTA -->
+  <section class="mt-14 rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm">
+    <h2 class="text-xl font-semibold text-slate-900">Not sure which option fits?</h2>
+    <p class="mx-auto mt-3 max-w-lg text-sm text-slate-600">
+      Send a brief description of your environment and what is causing friction. I will tell you whether it fits a package or needs a custom scope.
+    </p>
+    <a href={site.links.contact} class="mt-6 inline-flex rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white no-underline hover:bg-slate-800">
+      Get in touch
+    </a>
+  </section>
+
 </BaseLayout>

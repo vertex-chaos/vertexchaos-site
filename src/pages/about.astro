@@ -1,7 +1,102 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../config/site";
 ---
-<BaseLayout title="About | vertex_chaos">
-  <h1 class="text-3xl font-semibold">About</h1>
-  <p class="mt-4 text-slate-600">Coming soon.</p>
+
+<BaseLayout title="About | vertex_chaos" description="Jose Valdes — IT infrastructure engineer with 22+ years enterprise experience. Vertex Chaos LLC.">
+
+  <div>
+    <p class="text-sm text-slate-500">about</p>
+    <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900">Jose Valdes</h1>
+    <p class="mt-2 text-slate-500">IT Infrastructure & Automation Engineer · Portland, OR</p>
+  </div>
+
+  <div class="mt-10 max-w-2xl space-y-5 text-slate-700 leading-7">
+    <p>
+      I have been fixing and automating enterprise infrastructure for over 22 years — Active Directory at scale,
+      M365 migrations, Windows Server environments, and the automation layer that keeps it all running without
+      someone manually checking things every day.
+    </p>
+    <p>
+      My background is in large enterprise environments — thousands of users, multi-site AD forests, hybrid cloud,
+      and the kind of complexity that only comes from years of accumulated decisions. I apply that same discipline
+      to small and mid-sized businesses that do not have a dedicated IT department but still need things done right.
+    </p>
+    <p>
+      I started Vertex Chaos to do this work directly for clients who need a sharp operator, not a managed service
+      contract with a help desk. Fixed scope, clean delivery, documented handoff. If it cannot be repeated, it is
+      not done.
+    </p>
+    <p>
+      More recently I have been building AI-augmented automation — wiring Claude and other LLMs into operational
+      workflows using n8n and Python. Not as a novelty, but as a practical way to eliminate the repetitive parts
+      of IT operations.
+    </p>
+    <p>
+      I am bilingual — English and Spanish (Mexican Spanish). About half my client conversations happen in Spanish.
+    </p>
+  </div>
+
+  <!-- Skills -->
+  <section class="mt-12">
+    <h2 class="text-xl font-semibold text-slate-900">What I work with</h2>
+    <div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {[
+        { label: "Infrastructure", items: "Active Directory · Windows Server · VMware · Nutanix · Hyper-V · Linux" },
+        { label: "Microsoft 365", items: "Exchange Online · Entra ID · Intune · Defender · SharePoint · Teams · CIPP" },
+        { label: "Automation", items: "PowerShell · Python · Terraform · Ansible · GitHub Actions · CI/CD" },
+        { label: "AI & Workflows", items: "Claude API · n8n · LangChain · MCP · Prompt Engineering" },
+        { label: "Cloud", items: "Azure · AWS · Docker · Cloudflare" },
+        { label: "Backend", items: "Django · PostgreSQL · REST APIs · Django Ninja" },
+      ].map((cat) => (
+        <div class="rounded-xl border border-slate-200 bg-white p-4">
+          <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">{cat.label}</p>
+          <p class="mt-2 text-sm text-slate-700">{cat.items}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Certs -->
+  <section class="mt-12">
+    <h2 class="text-xl font-semibold text-slate-900">Certifications</h2>
+    <div class="mt-4 flex flex-wrap gap-3">
+      <span class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700">AZ-900 — Azure Fundamentals (Feb 2025)</span>
+    </div>
+  </section>
+
+  <!-- Social proof -->
+  <section class="mt-12 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+    <div class="grid gap-4 sm:grid-cols-3 text-center">
+      <div>
+        <p class="text-3xl font-bold text-slate-900">22+</p>
+        <p class="mt-1 text-sm text-slate-600">years in enterprise infrastructure</p>
+      </div>
+      <div>
+        <p class="text-3xl font-bold text-slate-900">100%</p>
+        <p class="mt-1 text-sm text-slate-600">Job Success Score on Upwork</p>
+      </div>
+      <div>
+        <p class="text-3xl font-bold text-slate-900">EN/ES</p>
+        <p class="mt-1 text-sm text-slate-600">bilingual — English and Spanish</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section class="mt-10 flex flex-wrap gap-4">
+    <a href={site.links.linkedin} target="_blank" rel="noopener noreferrer"
+       class="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 no-underline hover:bg-slate-50">
+      LinkedIn ↗
+    </a>
+    <a href={site.links.github} target="_blank" rel="noopener noreferrer"
+       class="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 no-underline hover:bg-slate-50">
+      GitHub ↗
+    </a>
+    <a href={site.links.contact}
+       class="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white no-underline hover:bg-slate-800">
+      Get in touch
+    </a>
+  </section>
+
 </BaseLayout>
