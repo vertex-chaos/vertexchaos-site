@@ -1,8 +1,47 @@
 ---
 import "../styles/global.css";
 import SiteHeader from "../components/SiteHeader.astro";
+import { site } from "../config/site";
 
-const { title = "vertex_chaos", description = "Vertex Chaos", noHeader = false } = Astro.props;
+interface Props {
+  title?: string;
+  description?: string;
+  noHeader?: boolean;
+  jsonLd?: object;
+}
+
+const {
+  title = "vertex_chaos",
+  description = site.subhead,
+  noHeader = false,
+  jsonLd,
+} = Astro.props;
+
+const canonical = `https://${site.domain}${Astro.url.pathname}`;
+const ogTitle = title.replace(/\s*\|.*$/, "").trim();
+
+// Default LocalBusiness JSON-LD for every page
+const defaultJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Vertex Chaos",
+  "url": `https://${site.domain}`,
+  "email": site.email,
+  "description": site.subhead,
+  "areaServed": "US",
+  "founder": {
+    "@type": "Person",
+    "name": "Jose Valdes",
+    "sameAs": [site.links.linkedin, site.links.github],
+    "knowsLanguage": ["en", "es"],
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "IT Infrastructure & Automation Services",
+  },
+};
+
+const structuredData = JSON.stringify(jsonLd ?? defaultJsonLd);
 ---
 
 <!doctype html>
@@ -10,8 +49,30 @@ const { title = "vertex_chaos", description = "Vertex Chaos", noHeader = false }
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Primary meta -->
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Vertex Chaos" />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={ogTitle} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- Structured data -->
+    <script type="application/ld+json" set:html={structuredData} />
+
+    <!-- Cloudflare Web Analytics (privacy-first, no cookies) -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "REPLACE_WITH_CF_ANALYTICS_TOKEN"}'></script>
   </head>
 
   <body>
@@ -19,5 +80,20 @@ const { title = "vertex_chaos", description = "Vertex Chaos", noHeader = false }
     <main class="mx-auto max-w-6xl px-6 py-10">
       <slot />
     </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-8 text-sm text-slate-500">
+        <span>© {new Date().getFullYear()} Vertex Chaos</span>
+        <div class="flex flex-wrap gap-6">
+          <a class="no-underline hover:text-slate-900" href="/services">Services</a>
+          <a class="no-underline hover:text-slate-900" href="/work">Work</a>
+          <a class="no-underline hover:text-slate-900" href="/about">About</a>
+          <a class="no-underline hover:text-slate-900" href="/contact">Contact</a>
+          <a class="no-underline hover:text-slate-900" href={site.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="no-underline hover:text-slate-900" href="/privacy">Privacy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

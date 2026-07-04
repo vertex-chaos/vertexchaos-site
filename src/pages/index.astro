@@ -4,6 +4,33 @@ import { site } from "../config/site";
 import Card from "../components/Card.astro";
 import Tag from "../components/Tag.astro";
 
+const homeJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Vertex Chaos",
+  "url": `https://${site.domain}`,
+  "email": site.email,
+  "priceRange": site.rate,
+  "description": site.subhead,
+  "areaServed": "US",
+  "founder": {
+    "@type": "Person",
+    "name": "Jose Valdes",
+    "jobTitle": "IT Infrastructure & Automation Engineer",
+    "knowsLanguage": ["en", "es"],
+    "sameAs": [site.links.linkedin, site.links.github],
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "IT Infrastructure & Automation Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Active Directory Health Check" }, "price": "199", "priceCurrency": "USD" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GPO Audit" }, "price": "299", "priceCurrency": "USD" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "M365 Security Hardening" }, "price": "799", "priceCurrency": "USD" },
+    ],
+  },
+};
+
 const services = [
   {
     title: "Infrastructure & Systems",
@@ -23,7 +50,7 @@ const services = [
 ];
 ---
 
-<BaseLayout title={site.brand} description={site.subhead}>
+<BaseLayout title={`${site.brand} — IT Infrastructure & Automation`} description={site.subhead} jsonLd={homeJsonLd}>
   <div class="flex items-center gap-2 text-sm text-slate-500">
     <span class="text-slate-400">●</span>
     <span>{site.domainLabel}</span>
@@ -142,11 +169,4 @@ const services = [
     </div>
   </section>
 
-  <footer class="mt-16 flex items-center justify-between border-t border-slate-200 py-8 text-sm text-slate-500">
-    <span>© {new Date().getFullYear()} vertex_chaos</span>
-    <div class="flex gap-6">
-      <a class="no-underline hover:text-slate-900" href="/about">About</a>
-      <a class="no-underline hover:text-slate-900" href="/privacy">Privacy</a>
-    </div>
-  </footer>
 </BaseLayout>

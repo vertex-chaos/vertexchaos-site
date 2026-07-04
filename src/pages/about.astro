@@ -1,9 +1,29 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { site } from "../config/site";
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jose Valdes",
+  "jobTitle": "IT Infrastructure & Automation Engineer",
+  "url": `https://${site.domain}/about`,
+  "email": site.email,
+  "knowsLanguage": ["en", "es"],
+  "sameAs": [site.links.linkedin, site.links.github],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Vertex Chaos",
+    "url": `https://${site.domain}`,
+  },
+  "knowsAbout": [
+    "Active Directory", "Microsoft 365", "Windows Server", "PowerShell",
+    "Python", "n8n", "Claude API", "Azure", "IT Automation",
+  ],
+};
 ---
 
-<BaseLayout title="About | vertex_chaos" description="Jose Valdes — IT infrastructure engineer with 22+ years enterprise experience. Vertex Chaos LLC.">
+<BaseLayout title="About | vertex_chaos" description="Jose Valdes — IT infrastructure engineer with 22+ years enterprise experience. Vertex Chaos LLC." jsonLd={personJsonLd}>
 
   <div>
     <p class="text-sm text-slate-500">about</p>
