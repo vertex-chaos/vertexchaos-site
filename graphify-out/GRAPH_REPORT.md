@@ -1,16 +1,16 @@
-# Graph Report - vertexchaos-site  (2026-06-29)
+# Graph Report - vertexchaos-site  (2026-07-04)
 
 ## Corpus Check
-- 56 files · ~7,015 words
+- 65 files · ~12,118 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 252 nodes · 232 edges · 41 communities (29 shown, 12 thin omitted)
+- 349 nodes · 329 edges · 50 communities (40 shown, 10 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0c1ac9d2`
+- Built from commit: `9afb1016`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -51,31 +51,37 @@
 - [[_COMMUNITY_Community 33|Community 33]]
 - [[_COMMUNITY_Community 34|Community 34]]
 - [[_COMMUNITY_Community 35|Community 35]]
+- [[_COMMUNITY_Community 41|Community 41]]
+- [[_COMMUNITY_Community 42|Community 42]]
+- [[_COMMUNITY_Community 43|Community 43]]
+- [[_COMMUNITY_Community 44|Community 44]]
+- [[_COMMUNITY_Community 45|Community 45]]
+- [[_COMMUNITY_Community 46|Community 46]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `vertexchaos-site` - 15 edges
-2. `Phase 1 — blog.vertexchaos.com: emdash on Cloudflare Workers ☐ Not Started` - 8 edges
-3. `site` - 7 edges
-4. `PROJECT INSTRUCTIONS` - 7 edges
-5. `Operator Commands` - 6 edges
-6. `Tool Smoke Test - Gemini` - 6 edges
-7. `Architecture Overview` - 5 edges
-8. `Current Likely Failure Areas` - 5 edges
-9. `Homepage Copy Draft` - 5 edges
-10. `Hero` - 5 edges
+2. `site` - 10 edges
+3. `properties` - 8 edges
+4. `Phase 1 — blog.vertexchaos.com: emdash on Cloudflare Workers ☐ Not Started` - 8 edges
+5. `PROJECT INSTRUCTIONS` - 7 edges
+6. `TODO.md — vertexchaos-site` - 6 edges
+7. `GOALS.md — vertexchaos-site` - 6 edges
+8. `Operator Commands` - 6 edges
+9. `Tool Smoke Test - Gemini` - 6 edges
+10. `case-studies` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
 
-## Communities (41 total, 12 thin omitted)
+## Communities (50 total, 10 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
 Nodes (27): 90-minute operating mode, Agent file strategy, Architecture guardrails, Block 1: foundation, Block 2: productization, Block 3: site credibility, Build, Claude (+19 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.15
-Nodes (10): site, caseStudies, collections, ../config/site, ../styles/global.css, services, ../../components/Card.astro, ../components/SiteHeader.astro (+2 more)
+Cohesion: 0.1
+Nodes (21): site, caseStudies, collections, ../config/site, ../styles/global.css, defaultJsonLd, ogTitle, structuredData (+13 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.15
@@ -165,15 +171,53 @@ Nodes (3): Outcome, The situation, What I delivered
 Cohesion: 0.5
 Nodes (3): Outcome, The situation, What I delivered
 
+### Community 25 - "Community 25"
+Cohesion: 0.29
+Nodes (6): Phase 1 — blog.vertexchaos.com: emdash on Cloudflare Workers, Phase 2 — Core pages: Services + About + Contact, Phase 3 — Work: Case studies, Phase 4 — SEO + Trust signals, Phase 5 — Astro blog, TODO.md — vertexchaos-site
+
+### Community 27 - "Community 27"
+Cohesion: 0.29
+Nodes (6): GOALS.md — vertexchaos-site, Phase 1 — blog.vertexchaos.com: emdash on Cloudflare Workers ☐ Not Started, Phase 2 — Core pages: Services + About + Contact revamp ☐ Not Started, Phase 3 — Work page: Real case studies + AI/n8n cases ☐ Not Started, Phase 4 — SEO + Social proof + Trust signals ☐ Not Started, Phase 5 — blog.vertexchaos.com: Simple Astro blog (not emdash) ☐ Not Started
+
+### Community 41 - "Community 41"
+Cohesion: 0.07
+Nodes (29): AllValuesOf, AnyEntryMap, CollectionEntry, CollectionKey, ContentCollectionKey, ContentConfig, ContentEntryMap, DataCollectionKey (+21 more)
+
+### Community 42 - "Community 42"
+Cohesion: 0.07
+Nodes (27): additionalProperties, properties, required, type, definitions, case-studies, type, default (+19 more)
+
+### Community 43 - "Community 43"
+Cohesion: 0.4
+Nodes (4): Stack, The problem, What I built, What I learned
+
+### Community 44 - "Community 44"
+Cohesion: 0.5
+Nodes (3): Outcome, The situation, What I delivered
+
+### Community 45 - "Community 45"
+Cohesion: 0.5
+Nodes (3): Outcome, The situation, What I delivered
+
+### Community 46 - "Community 46"
+Cohesion: 0.5
+Nodes (3): Outcome, The situation, What I delivered
+
 ## Knowledge Gaps
-- **140 isolated node(s):** `name`, `type`, `version`, `private`, `dev` (+135 more)
+- **217 isolated node(s):** `name`, `type`, `version`, `private`, `dev` (+212 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `name`, `type`, `version` to the rest of the system?**
-  _140 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _217 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.07 - nodes in this community are weakly interconnected._
+- **Should `Community 1` be split into smaller, more focused modules?**
+  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+- **Should `Community 41` be split into smaller, more focused modules?**
+  _Cohesion score 0.07 - nodes in this community are weakly interconnected._
+- **Should `Community 42` be split into smaller, more focused modules?**
   _Cohesion score 0.07 - nodes in this community are weakly interconnected._
