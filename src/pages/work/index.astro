@@ -1,49 +1,107 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import Card from "../../components/Card.astro";
 import Tag from "../../components/Tag.astro";
 import { site } from "../../config/site";
 import { getCollection } from "astro:content";
 
-const entries = (await getCollection("case-studies"))
-  .sort((a, b) => (b.data?.date?.valueOf?.() ?? 0) - (a.data?.date?.valueOf?.() ?? 0));
+const allEntries = await getCollection("case-studies");
+
+// Sort: client first, then lab; within each group alphabetical
+const entries = allEntries.sort((a, b) => {
+  const kindOrder: Record<string, number> = { client: 0, "open-source": 1, lab: 2 };
+  const ka = kindOrder[a.data?.kind ?? "client"] ?? 3;
+  const kb = kindOrder[b.data?.kind ?? "client"] ?? 3;
+  if (ka !== kb) return ka - kb;
+  return (a.data?.title ?? "").localeCompare(b.data?.title ?? "");
+});
+
+const clientEntries = entries.filter(e => e.data?.kind === "client");
+const labEntries = entries.filter(e => e.data?.kind !== "client");
+
+const kindLabel: Record<string, string> = {
+  client: "Client",
+  lab: "Lab",
+  "open-source": "Open Source",
+};
 ---
 
-<BaseLayout title={`Work | ${site.brand}`} description="Generalized case studies with the parts clients care about: problem, approach, result.">
-  <div class="flex items-end justify-between gap-6">
-    <div>
-      <p class="text-sm text-slate-500">workportfolio</p>
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900">Work</h1>
-      <p class="mt-4 max-w-2xl text-slate-600">
-        Generalized case studies with the parts clients care about: problem, approach, result.
-      </p>
-    </div>
+<BaseLayout title={`Work | ${site.brand}`} description="Case studies covering infrastructure, M365, and AI automation work. Anonymized, real outcomes.">
+
+  <div>
+    <p class="text-sm text-slate-500">work</p>
+    <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900">Work</h1>
+    <p class="mt-4 max-w-2xl text-slate-600">
+      Anonymized case studies. The parts that matter: problem, approach, outcome.
+    </p>
   </div>
 
-  <div class="mt-10 grid gap-6">
-    {entries.map((entry) => {
-      const d = entry.data ?? {};
-      const href = `/work/${entry.slug}/`;
-      return (
-        <Card>
-          <div class="flex items-start justify-between gap-6">
-            <div class="min-w-0">
-              <a class="text-lg font-semibold text-slate-900 hover:underline" href={href}>
-                {d.title ?? entry.slug}
-              </a>
-              {d.summary && <p class="mt-2 text-slate-600">{d.summary}</p>}
-
-              <div class="mt-3 flex flex-wrap gap-2">
-                {Array.isArray(d.tags) && d.tags.map((t) => <Tag label={t} />)}
+  <!-- Client work -->
+  {clientEntries.length > 0 && (
+    <section class="mt-12">
+      <h2 class="text-xl font-semibold text-slate-900">Client work</h2>
+      <div class="mt-5 grid gap-5">
+        {clientEntries.map((entry) => {
+          const d = entry.data ?? {};
+          const href = `/work/${entry.slug}`;
+          return (
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div class="flex items-start justify-between gap-4">
+                <div class="min-w-0">
+                  <a class="text-lg font-semibold text-slate-900 hover:underline no-underline" href={href}>
+                    {d.title ?? entry.slug}
+                  </a>
+                  {d.when && <span class="ml-3 text-xs text-slate-400">{d.when}</span>}
+                  {d.summary && <p class="mt-2 text-slate-600 text-sm">{d.summary}</p>}
+                  <div class="mt-3 flex flex-wrap gap-2">
+                    {Array.isArray(d.tags) && d.tags.map((t: string) => <Tag label={t} />)}
+                  </div>
+                </div>
+                <a href={href} class="shrink-0 text-slate-400 hover:text-slate-700 text-lg no-underline" aria-label="Read case study">↗</a>
               </div>
             </div>
+          );
+        })}
+      </div>
+    </section>
+  )}
 
-            <div class="shrink-0 text-sm text-slate-500">
-              {d.client && <div class="text-right">{d.client}</div>}
+  <!-- Lab / personal projects -->
+  {labEntries.length > 0 && (
+    <section class="mt-12">
+      <h2 class="text-xl font-semibold text-slate-900">Lab</h2>
+      <p class="mt-1 text-sm text-slate-500">Personal projects and tools built for my own use.</p>
+      <div class="mt-5 grid gap-5">
+        {labEntries.map((entry) => {
+          const d = entry.data ?? {};
+          const href = `/work/${entry.slug}`;
+          const badge = kindLabel[d.kind ?? "lab"] ?? d.kind;
+          return (
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div class="flex items-start justify-between gap-4">
+                <div class="min-w-0">
+                  <div class="flex items-center gap-3">
+                    <a class="text-lg font-semibold text-slate-900 hover:underline no-underline" href={href}>
+                      {d.title ?? entry.slug}
+                    </a>
+                    <span class="rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-500">{badge}</span>
+                  </div>
+                  {d.when && <span class="text-xs text-slate-400">{d.when}</span>}
+                  {d.summary && <p class="mt-2 text-slate-600 text-sm">{d.summary}</p>}
+                  <div class="mt-3 flex flex-wrap gap-2">
+                    {Array.isArray(d.tags) && d.tags.map((t: string) => <Tag label={t} />)}
+                  </div>
+                </div>
+                <a href={href} class="shrink-0 text-slate-400 hover:text-slate-700 text-lg no-underline" aria-label="Read case study">↗</a>
+              </div>
             </div>
-          </div>
-        </Card>
-      );
-    })}
-  </div>
+          );
+        })}
+      </div>
+    </section>
+  )}
+
+  <p class="mt-10 text-sm text-slate-500">
+    All client work is anonymized. Details available under NDA for qualified prospects.
+  </p>
+
 </BaseLayout>
