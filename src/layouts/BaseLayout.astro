@@ -70,9 +70,7 @@ const structuredData = JSON.stringify(jsonLd ?? defaultJsonLd);
     <!-- Structured data -->
     <script type="application/ld+json" set:html={structuredData} />
 
-    <!-- Cloudflare Web Analytics (privacy-first, no cookies) -->
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
-      data-cf-beacon='{"token": "REPLACE_WITH_CF_ANALYTICS_TOKEN"}'></script>
+    <!-- Cloudflare Web Analytics injected automatically via Cloudflare proxy -->
   </head>
 
   <body>
