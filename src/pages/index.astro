@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { site } from "../config/site";
-import Card from "../components/Card.astro";
 import Tag from "../components/Tag.astro";
 
 const homeJsonLd = {
@@ -33,138 +32,174 @@ const homeJsonLd = {
 
 const services = [
   {
+    icon: "⚙️",
     title: "Infrastructure & Systems",
-    body: "Active Directory, Windows Server, DNS, email, backup, virtualization, migrations, cleanup, and hardening.",
+    body: "Active Directory, Windows Server, DNS, email, backup, virtualization, migrations, and hardening.",
     tags: ["Windows Server", "AD", "DNS", "Linux"],
+    price: "from $199",
   },
   {
+    icon: "⚡",
     title: "Automation & DevOps",
-    body: "PowerShell and Python automation, Docker and deployment cleanup, CI/CD workflows, and operational tooling.",
+    body: "PowerShell and Python automation, Docker, CI/CD pipelines, and operational tooling.",
     tags: ["PowerShell", "Python", "Docker", "CI/CD"],
+    price: "from $299",
   },
   {
+    icon: "🤖",
     title: "AI Enablement",
-    body: "Practical AI workflow integration, coding-agent setup, internal tool acceleration, and documentation systems.",
-    tags: ["Agents", "Workflows", "Tooling"],
+    body: "Practical AI workflow integration with n8n and Claude, coding-agent setup, and internal tool acceleration.",
+    tags: ["n8n", "Claude", "Agents", "Workflows"],
+    price: "from $150",
   },
 ];
 ---
 
 <BaseLayout title={`${site.brand} — IT Infrastructure & Automation`} description={site.subhead} jsonLd={homeJsonLd}>
-  <div class="flex items-center gap-2 text-sm text-slate-500">
-    <span class="text-slate-400">●</span>
-    <span>{site.domainLabel}</span>
-  </div>
 
-  <section class="mt-10">
-    <h1 class="whitespace-pre-line text-5xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
-      {site.headline}
-    </h1>
-    <p class="mt-6 max-w-2xl text-base leading-7 text-slate-600">
-      {site.subhead}
-    </p>
-
-    <div class="mt-8 flex flex-wrap gap-3">
-      <a
-        href={site.links.contact}
-        class="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white no-underline hover:bg-slate-800"
-      >
-        Book a consultation
-      </a>
-      <a
-        href={site.links.services}
-        class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 no-underline hover:bg-slate-50"
-      >
-        See services
-      </a>
-    </div>
-  </section>
-
-  <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 border-y border-slate-100 py-4 text-sm text-slate-500">
-    {site.trustItems.map((item) => <span>{item}</span>)}
-  </div>
-
-  <section class="mt-16">
-    <h2 class="text-2xl font-semibold text-slate-900">Services</h2>
-    <div class="mt-6 grid gap-6 lg:grid-cols-3">
-      {services.map((svc) => (
-        <Card title={svc.title} body={svc.body}>
-          <div class="flex flex-wrap gap-2">
-            {svc.tags.map((t) => <Tag label={t} />)}
-          </div>
-        </Card>
-      ))}
-    </div>
-  </section>
-
-  <section class="mt-16">
-    <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <div class="flex items-center justify-between">
-        <h2 class="text-2xl font-semibold text-slate-900">How I work</h2>
-        <span class="text-xs text-slate-500">simple, explicit, testable</span>
+  <!-- Hero -->
+  <section class="-mx-6 -mt-10 bg-slate-900 px-6 py-20 text-white">
+    <div class="mx-auto max-w-4xl">
+      <div class="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-800 px-3 py-1 text-xs text-slate-300 mb-8">
+        <span class="h-2 w-2 rounded-full bg-green-400"></span>
+        Available for new projects
       </div>
-      <ol class="mt-6 grid gap-3 text-sm text-slate-600">
-        <li>1) Define scope</li>
-        <li>2) Ship increments</li>
-        <li>3) Add guardrails</li>
-        <li>4) Document everything</li>
-        <li>5) Hand-off</li>
-      </ol>
-      <p class="mt-6 text-sm text-slate-700">If it cannot be repeated, it is not done.</p>
-    </div>
-  </section>
-
-  <section class="mt-16">
-    <div class="flex items-center justify-between">
-      <h2 class="text-2xl font-semibold text-slate-900">Featured work</h2>
-      <span class="text-xs text-slate-500">anonymized, on purpose</span>
-    </div>
-    <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <div class="flex items-start justify-between gap-6">
-        <div>
-          <h3 class="text-base font-semibold text-slate-900">
-            High-volume Windows file transfer automation
-          </h3>
-          <p class="mt-2 text-sm text-slate-600">
-            Moved large file sets reliably using an input list, with progress reporting and restartable execution.
-          </p>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <Tag label="Client" />
-            <Tag label="PowerShell" />
-            <Tag label="Windows Server" />
-            <Tag label="File Ops" />
-          </div>
-        </div>
+      <h1 class="text-5xl font-bold tracking-tight leading-tight sm:text-6xl">
+        Infrastructure that works.<br/>
+        <span class="text-blue-400">Automation that sticks.</span>
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
+        {site.subhead}
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
         <a
-          href="/work"
-          class="mt-1 text-sm font-semibold text-slate-700 no-underline hover:text-slate-900"
-          title="View case studies"
+          href={site.links.contact}
+          class="rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white no-underline hover:bg-blue-500 transition-colors shadow-lg"
         >
-          ↗
+          Start a project →
+        </a>
+        <a
+          href={site.links.services}
+          class="rounded-lg border border-slate-600 bg-slate-800 px-6 py-3 text-sm font-semibold text-slate-200 no-underline hover:bg-slate-700 transition-colors"
+        >
+          View services & pricing
         </a>
       </div>
     </div>
   </section>
 
-  <section class="mt-16 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm text-center">
-    <h2 class="text-xl font-semibold text-slate-900">
-      Need a sharp operator, not another vague consultant?
-    </h2>
-    <p class="mx-auto mt-3 max-w-xl text-sm text-slate-600">
-      Practical fixes, clean automation, and systems that are easier to run tomorrow than they are today.
-    </p>
-    <div class="mt-6 flex flex-wrap justify-center gap-3">
+  <!-- Trust bar -->
+  <section class="-mx-6 border-b border-slate-200 bg-white px-6 py-4">
+    <div class="mx-auto max-w-6xl flex flex-wrap items-center justify-between gap-x-8 gap-y-2 text-xs text-slate-500">
+      {site.trustItems.map((item) => (
+        <span class="flex items-center gap-1.5">
+          <span class="text-blue-500">✓</span>
+          {item}
+        </span>
+      ))}
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="mt-20">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900">What I do</h2>
+      <p class="mt-3 text-slate-500 max-w-xl mx-auto">Fixed-scope packages with defined deliverables. No hourly surprises.</p>
+    </div>
+    <div class="grid gap-6 lg:grid-cols-3">
+      {services.map((svc) => (
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-4">{svc.icon}</div>
+          <h3 class="text-base font-semibold text-slate-900">{svc.title}</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">{svc.body}</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            {svc.tags.map((t) => <Tag label={t} />)}
+          </div>
+          <p class="mt-4 text-sm font-semibold text-blue-600">{svc.price}</p>
+        </div>
+      ))}
+    </div>
+    <div class="mt-8 text-center">
+      <a href={site.links.services} class="text-sm font-semibold text-blue-600 no-underline hover:underline">
+        See all packages and pricing →
+      </a>
+    </div>
+  </section>
+
+  <!-- How I work -->
+  <section class="mt-20">
+    <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+      <div class="flex items-start justify-between gap-6 flex-wrap">
+        <div>
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900">How it works</h2>
+          <p class="mt-2 text-sm text-slate-500">Simple, documented, repeatable.</p>
+        </div>
+        <a href={site.links.contact} class="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white no-underline hover:bg-blue-700 transition-colors">
+          Get started
+        </a>
+      </div>
+      <div class="mt-8 grid gap-4 sm:grid-cols-5">
+        {[
+          ["01", "Define scope", "Clear deliverables, timeline, and price upfront."],
+          ["02", "Ship increments", "Working pieces at every checkpoint — no big-bang delivery."],
+          ["03", "Add guardrails", "Monitoring, alerts, and rollback plans before go-live."],
+          ["04", "Document everything", "Runbooks, architecture notes, and handoff docs included."],
+          ["05", "Hand-off", "You own it. I'm available for follow-on work."],
+        ].map(([num, title, desc]) => (
+          <div class="relative pl-4 border-l-2 border-blue-100">
+            <span class="text-xs font-bold text-blue-400">{num}</span>
+            <p class="mt-1 text-sm font-semibold text-slate-900">{title}</p>
+            <p class="mt-1 text-xs text-slate-500">{desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured work -->
+  <section class="mt-20">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Featured work</h2>
+      <a href="/work" class="text-sm font-semibold text-blue-600 no-underline hover:underline">All case studies →</a>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-2">
+      {[
+        {
+          title: "AD migration & DC consolidation",
+          desc: "Migrated 10,000+ user accounts across domain restructuring with zero business disruption.",
+          tags: ["Active Directory", "Migration", "Windows Server"],
+          href: "/work/ad-migration-consolidation",
+        },
+        {
+          title: "M365 security hardening",
+          desc: "Raised Microsoft Secure Score from 34 to 71 across a hybrid M365 + Entra ID environment.",
+          tags: ["M365", "Security", "Entra ID"],
+          href: "/work/m365-migration-security-hardening",
+        },
+      ].map((item) => (
+        <a href={item.href} class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm no-underline hover:shadow-md transition-shadow block">
+          <h3 class="text-base font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">{item.title}</h3>
+          <p class="mt-2 text-sm text-slate-600">{item.desc}</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            {item.tags.map((t) => <Tag label={t} />)}
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="mt-20 -mx-6 bg-blue-600 px-6 py-16 text-white text-center">
+    <div class="mx-auto max-w-2xl">
+      <h2 class="text-3xl font-bold tracking-tight">Ready to fix it for good?</h2>
+      <p class="mt-4 text-blue-100">
+        Describe your environment and the friction. I'll respond within 4 hours with a scope and price.
+      </p>
       <a
         href={site.links.contact}
-        class="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white no-underline hover:bg-slate-800"
+        class="mt-8 inline-block rounded-lg bg-white px-8 py-3 text-sm font-semibold text-blue-700 no-underline hover:bg-blue-50 transition-colors shadow-lg"
       >
-        Book a consultation
-      </a>
-      <a
-        href={site.links.services}
-        class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 no-underline hover:bg-slate-50"
-      >
-        See services
+        Start a project
       </a>
     </div>
   </section>

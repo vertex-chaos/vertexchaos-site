@@ -80,16 +80,43 @@ const structuredData = JSON.stringify(jsonLd ?? defaultJsonLd);
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-200 bg-white">
-      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-8 text-sm text-slate-500">
-        <span>© {new Date().getFullYear()} Vertex Chaos</span>
-        <div class="flex flex-wrap gap-6">
-          <a class="no-underline hover:text-slate-900" href="/services">Services</a>
-          <a class="no-underline hover:text-slate-900" href="/work">Work</a>
-          <a class="no-underline hover:text-slate-900" href="/about">About</a>
-          <a class="no-underline hover:text-slate-900" href="/contact">Contact</a>
-          <a class="no-underline hover:text-slate-900" href={site.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a class="no-underline hover:text-slate-900" href="/privacy">Privacy</a>
+    <footer class="mt-20 border-t border-slate-200 bg-slate-900 text-slate-400">
+      <div class="mx-auto max-w-6xl px-6 py-12">
+        <div class="flex flex-wrap items-start justify-between gap-10">
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <span class="grid h-8 w-8 place-items-center rounded-md bg-blue-600 text-xs font-bold text-white">vc</span>
+              <span class="text-sm font-semibold text-white">vertex_chaos</span>
+            </div>
+            <p class="text-xs max-w-xs leading-relaxed">IT infrastructure and automation for small and mid-sized businesses. U.S.-based, remote.</p>
+          </div>
+          <div class="flex flex-wrap gap-12 text-sm">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">Services</p>
+              <div class="flex flex-col gap-2">
+                <a class="no-underline hover:text-white transition-colors" href="/services">All packages</a>
+                <a class="no-underline hover:text-white transition-colors" href="/contact">Get a quote</a>
+              </div>
+            </div>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">Work</p>
+              <div class="flex flex-col gap-2">
+                <a class="no-underline hover:text-white transition-colors" href="/work">Case studies</a>
+                <a class="no-underline hover:text-white transition-colors" href="/blog">Blog</a>
+              </div>
+            </div>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">Connect</p>
+              <div class="flex flex-col gap-2">
+                <a class="no-underline hover:text-white transition-colors" href={site.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="no-underline hover:text-white transition-colors" href="/about">About</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 border-t border-slate-800 pt-6 flex flex-wrap items-center justify-between gap-4 text-xs">
+          <span>© {new Date().getFullYear()} Vertex Chaos LLC</span>
+          <a class="no-underline hover:text-white transition-colors" href="/privacy">Privacy</a>
         </div>
       </div>
     </footer>
