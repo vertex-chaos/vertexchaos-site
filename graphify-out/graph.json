@@ -304,7 +304,7 @@
       "label": "AnyEntryMap",
       "file_type": "code",
       "source_file": ".astro/content.d.ts",
-      "source_location": "L178",
+      "source_location": "L188",
       "id": "astro_content_d_anyentrymap",
       "community": 41,
       "norm_label": "anyentrymap"
@@ -313,7 +313,7 @@
       "label": "ExtractLoaderTypes",
       "file_type": "code",
       "source_file": ".astro/content.d.ts",
-      "source_location": "L180",
+      "source_location": "L190",
       "id": "astro_content_d_extractloadertypes",
       "community": 41,
       "norm_label": "extractloadertypes"
@@ -322,7 +322,7 @@
       "label": "ExtractDataType",
       "file_type": "code",
       "source_file": ".astro/content.d.ts",
-      "source_location": "L188",
+      "source_location": "L198",
       "id": "astro_content_d_extractdatatype",
       "community": 41,
       "norm_label": "extractdatatype"
@@ -331,7 +331,7 @@
       "label": "ExtractEntryFilterType",
       "file_type": "code",
       "source_file": ".astro/content.d.ts",
-      "source_location": "L189",
+      "source_location": "L199",
       "id": "astro_content_d_extractentryfiltertype",
       "community": 41,
       "norm_label": "extractentryfiltertype"
@@ -340,7 +340,7 @@
       "label": "ExtractCollectionFilterType",
       "file_type": "code",
       "source_file": ".astro/content.d.ts",
-      "source_location": "L190",
+      "source_location": "L200",
       "id": "astro_content_d_extractcollectionfiltertype",
       "community": 41,
       "norm_label": "extractcollectionfiltertype"
@@ -349,7 +349,7 @@
       "label": "ExtractErrorType",
       "file_type": "code",
       "source_file": ".astro/content.d.ts",
-      "source_location": "L191",
+      "source_location": "L201",
       "id": "astro_content_d_extracterrortype",
       "community": 41,
       "norm_label": "extracterrortype"
@@ -358,7 +358,7 @@
       "label": "LiveLoaderDataType",
       "file_type": "code",
       "source_file": ".astro/content.d.ts",
-      "source_location": "L193",
+      "source_location": "L203",
       "id": "astro_content_d_liveloaderdatatype",
       "community": 41,
       "norm_label": "liveloaderdatatype"
@@ -367,7 +367,7 @@
       "label": "LiveLoaderEntryFilterType",
       "file_type": "code",
       "source_file": ".astro/content.d.ts",
-      "source_location": "L199",
+      "source_location": "L209",
       "id": "astro_content_d_liveloaderentryfiltertype",
       "community": 41,
       "norm_label": "liveloaderentryfiltertype"
@@ -376,7 +376,7 @@
       "label": "LiveLoaderCollectionFilterType",
       "file_type": "code",
       "source_file": ".astro/content.d.ts",
-      "source_location": "L201",
+      "source_location": "L211",
       "id": "astro_content_d_liveloadercollectionfiltertype",
       "community": 41,
       "norm_label": "liveloadercollectionfiltertype"
@@ -385,7 +385,7 @@
       "label": "LiveLoaderErrorType",
       "file_type": "code",
       "source_file": ".astro/content.d.ts",
-      "source_location": "L203",
+      "source_location": "L213",
       "id": "astro_content_d_liveloadererrortype",
       "community": 41,
       "norm_label": "liveloadererrortype"
@@ -394,7 +394,7 @@
       "label": "ContentConfig",
       "file_type": "code",
       "source_file": ".astro/content.d.ts",
-      "source_location": "L207",
+      "source_location": "L217",
       "id": "astro_content_d_contentconfig",
       "community": 41,
       "norm_label": "contentconfig"
@@ -403,7 +403,7 @@
       "label": "LiveContentConfig",
       "file_type": "code",
       "source_file": ".astro/content.d.ts",
-      "source_location": "L208",
+      "source_location": "L218",
       "id": "astro_content_d_livecontentconfig",
       "community": 41,
       "norm_label": "livecontentconfig"
@@ -434,6 +434,231 @@
       "id": "astro_content_assets_mjs",
       "community": 47,
       "norm_label": "content-assets.mjs"
+    },
+    {
+      "label": "blog.schema.json",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L1",
+      "id": "astro_collections_blog_schema_json",
+      "community": 50,
+      "norm_label": "blog.schema.json"
+    },
+    {
+      "label": "$ref",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L2",
+      "id": "collections_blog_schema_ref",
+      "community": 50,
+      "norm_label": "$ref"
+    },
+    {
+      "label": "definitions",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L3",
+      "id": "collections_blog_schema_definitions",
+      "community": 50,
+      "norm_label": "definitions"
+    },
+    {
+      "label": "blog",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L4",
+      "id": "collections_blog_schema_definitions_blog",
+      "community": 50,
+      "norm_label": "blog"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L5",
+      "id": "collections_blog_schema_blog_type",
+      "community": 50,
+      "norm_label": "type"
+    },
+    {
+      "label": "properties",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L6",
+      "id": "collections_blog_schema_blog_properties",
+      "community": 50,
+      "norm_label": "properties"
+    },
+    {
+      "label": "title",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L7",
+      "id": "collections_blog_schema_properties_title",
+      "community": 50,
+      "norm_label": "title"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L8",
+      "id": "collections_blog_schema_title_type",
+      "community": 50,
+      "norm_label": "type"
+    },
+    {
+      "label": "date",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L10",
+      "id": "collections_blog_schema_properties_date",
+      "community": 50,
+      "norm_label": "date"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L11",
+      "id": "collections_blog_schema_date_type",
+      "community": 50,
+      "norm_label": "type"
+    },
+    {
+      "label": "summary",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L13",
+      "id": "collections_blog_schema_properties_summary",
+      "community": 50,
+      "norm_label": "summary"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L14",
+      "id": "collections_blog_schema_summary_type",
+      "community": 50,
+      "norm_label": "type"
+    },
+    {
+      "label": "tags",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L16",
+      "id": "collections_blog_schema_properties_tags",
+      "community": 50,
+      "norm_label": "tags"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L17",
+      "id": "collections_blog_schema_tags_type",
+      "community": 50,
+      "norm_label": "type"
+    },
+    {
+      "label": "items",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L18",
+      "id": "collections_blog_schema_tags_items",
+      "community": 50,
+      "norm_label": "items"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L19",
+      "id": "collections_blog_schema_items_type",
+      "community": 50,
+      "norm_label": "type"
+    },
+    {
+      "label": "default",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L21",
+      "id": "collections_blog_schema_tags_default",
+      "community": 50,
+      "norm_label": "default"
+    },
+    {
+      "label": "draft",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L23",
+      "id": "collections_blog_schema_properties_draft",
+      "community": 50,
+      "norm_label": "draft"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L24",
+      "id": "collections_blog_schema_draft_type",
+      "community": 50,
+      "norm_label": "type"
+    },
+    {
+      "label": "default",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L25",
+      "id": "collections_blog_schema_draft_default",
+      "community": 50,
+      "norm_label": "default"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L27",
+      "id": "collections_blog_schema_properties_schema",
+      "community": 50,
+      "norm_label": "$schema"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L28",
+      "id": "collections_blog_schema_schema_type",
+      "community": 50,
+      "norm_label": "type"
+    },
+    {
+      "label": "required",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L31",
+      "id": "collections_blog_schema_blog_required",
+      "community": 50,
+      "norm_label": "required"
+    },
+    {
+      "label": "additionalProperties",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L36",
+      "id": "collections_blog_schema_blog_additionalproperties",
+      "community": 50,
+      "norm_label": "additionalproperties"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L39",
+      "id": "collections_blog_schema_schema",
+      "community": 50,
+      "norm_label": "$schema"
     },
     {
       "label": "case-studies.schema.json",
@@ -823,23 +1048,31 @@
       "norm_label": "casestudies"
     },
     {
-      "label": "collections",
+      "label": "blog",
       "file_type": "code",
       "source_file": "src/content/config.ts",
       "source_location": "L15",
+      "id": "content_config_blog",
+      "community": 1,
+      "norm_label": "blog"
+    },
+    {
+      "label": "collections",
+      "file_type": "code",
+      "source_file": "src/content/config.ts",
+      "source_location": "L26",
       "id": "content_config_collections",
       "community": 1,
       "norm_label": "collections"
     },
     {
-      "label": "../components/Card.astro",
+      "label": "Card.astro",
       "file_type": "code",
       "source_file": "src/components/Card.astro",
       "source_location": "L1",
-      "confidence": "EXTRACTED",
       "id": "src_components_card_astro",
       "community": 1,
-      "norm_label": "../components/card.astro"
+      "norm_label": "card.astro"
     },
     {
       "label": "../components/SiteHeader.astro",
@@ -899,6 +1132,33 @@
       "norm_label": "contact.astro"
     },
     {
+      "label": "wrap",
+      "file_type": "code",
+      "source_file": "src/pages/contact.astro",
+      "source_location": "L119",
+      "id": "pages_contact_wrap",
+      "community": 1,
+      "norm_label": "wrap"
+    },
+    {
+      "label": "btn",
+      "file_type": "code",
+      "source_file": "src/pages/contact.astro",
+      "source_location": "L120",
+      "id": "pages_contact_btn",
+      "community": 1,
+      "norm_label": "btn"
+    },
+    {
+      "label": "errBox",
+      "file_type": "code",
+      "source_file": "src/pages/contact.astro",
+      "source_location": "L121",
+      "id": "pages_contact_errbox",
+      "community": 1,
+      "norm_label": "errbox"
+    },
+    {
       "label": "privacy.astro",
       "file_type": "code",
       "source_file": "src/pages/privacy.astro",
@@ -906,6 +1166,15 @@
       "id": "src_pages_privacy_astro",
       "community": 1,
       "norm_label": "privacy.astro"
+    },
+    {
+      "label": "thanks.astro",
+      "file_type": "code",
+      "source_file": "src/pages/thanks.astro",
+      "source_location": "L1",
+      "id": "src_pages_thanks_astro",
+      "community": 1,
+      "norm_label": "thanks.astro"
     },
     {
       "label": "about.astro",
@@ -974,7 +1243,7 @@
       "label": "homeJsonLd",
       "file_type": "code",
       "source_file": "src/pages/index.astro",
-      "source_location": "L7",
+      "source_location": "L6",
       "id": "pages_index_homejsonld",
       "community": 1,
       "norm_label": "homejsonld"
@@ -983,7 +1252,7 @@
       "label": "services",
       "file_type": "code",
       "source_file": "src/pages/index.astro",
-      "source_location": "L34",
+      "source_location": "L33",
       "id": "pages_index_services",
       "community": 1,
       "norm_label": "services"
@@ -1010,6 +1279,78 @@
     {
       "label": "[slug].astro",
       "file_type": "code",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L1",
+      "id": "src_pages_blog_slug_astro",
+      "community": 1,
+      "norm_label": "[slug].astro"
+    },
+    {
+      "label": "getStaticPaths()",
+      "file_type": "code",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L6",
+      "id": "blog_slug_getstaticpaths",
+      "community": 1,
+      "norm_label": "getstaticpaths()"
+    },
+    {
+      "label": "dateStr",
+      "file_type": "code",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L16",
+      "id": "blog_slug_datestr",
+      "community": 1,
+      "norm_label": "datestr"
+    },
+    {
+      "label": "articleJsonLd",
+      "file_type": "code",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L19",
+      "id": "blog_slug_articlejsonld",
+      "community": 1,
+      "norm_label": "articlejsonld"
+    },
+    {
+      "label": "astro:content",
+      "file_type": "code",
+      "source_file": "astro:content",
+      "confidence": "EXTRACTED",
+      "id": "astro_content",
+      "community": 1,
+      "norm_label": "astro:content"
+    },
+    {
+      "label": "index.astro",
+      "file_type": "code",
+      "source_file": "src/pages/blog/index.astro",
+      "source_location": "L1",
+      "id": "src_pages_blog_index_astro",
+      "community": 1,
+      "norm_label": "index.astro"
+    },
+    {
+      "label": "posts",
+      "file_type": "code",
+      "source_file": "src/pages/blog/index.astro",
+      "source_location": "L7",
+      "id": "blog_index_posts",
+      "community": 1,
+      "norm_label": "posts"
+    },
+    {
+      "label": "dateStr",
+      "file_type": "code",
+      "source_file": "src/pages/blog/index.astro",
+      "source_location": "L29",
+      "id": "blog_index_datestr",
+      "community": 1,
+      "norm_label": "datestr"
+    },
+    {
+      "label": "[slug].astro",
+      "file_type": "code",
       "source_file": "src/pages/work/[slug].astro",
       "source_location": "L1",
       "id": "src_pages_work_slug_astro",
@@ -1024,15 +1365,6 @@
       "id": "work_slug_getstaticpaths",
       "community": 1,
       "norm_label": "getstaticpaths()"
-    },
-    {
-      "label": "astro:content",
-      "file_type": "code",
-      "source_file": "astro:content",
-      "confidence": "EXTRACTED",
-      "id": "astro_content",
-      "community": 1,
-      "norm_label": "astro:content"
     },
     {
       "label": "index.astro",
@@ -1254,7 +1586,7 @@
       "label": "Phase 2 \u2014 Core pages: Services + About + Contact",
       "file_type": "document",
       "source_file": "TODO.md",
-      "source_location": "L17",
+      "source_location": "L10",
       "id": "vertexchaos_site_todo_phase_2_core_pages_services_about_contact",
       "community": 25,
       "norm_label": "phase 2 \u2014 core pages: services + about + contact"
@@ -1263,7 +1595,7 @@
       "label": "Phase 3 \u2014 Work: Case studies",
       "file_type": "document",
       "source_file": "TODO.md",
-      "source_location": "L24",
+      "source_location": "L17",
       "id": "vertexchaos_site_todo_phase_3_work_case_studies",
       "community": 25,
       "norm_label": "phase 3 \u2014 work: case studies"
@@ -1272,7 +1604,7 @@
       "label": "Phase 4 \u2014 SEO + Trust signals",
       "file_type": "document",
       "source_file": "TODO.md",
-      "source_location": "L31",
+      "source_location": "L24",
       "id": "vertexchaos_site_todo_phase_4_seo_trust_signals",
       "community": 25,
       "norm_label": "phase 4 \u2014 seo + trust signals"
@@ -1281,10 +1613,19 @@
       "label": "Phase 5 \u2014 Astro blog",
       "file_type": "document",
       "source_file": "TODO.md",
-      "source_location": "L40",
+      "source_location": "L33",
       "id": "vertexchaos_site_todo_phase_5_astro_blog",
       "community": 25,
       "norm_label": "phase 5 \u2014 astro blog"
+    },
+    {
+      "label": "Phase 6 \u2014 Contact form UX + Design revamp",
+      "file_type": "document",
+      "source_file": "TODO.md",
+      "source_location": "L41",
+      "id": "vertexchaos_site_todo_phase_6_contact_form_ux_design_revamp",
+      "community": 25,
+      "norm_label": "phase 6 \u2014 contact form ux + design revamp"
     },
     {
       "label": "GOALS_TODOS.md",
@@ -1465,6 +1806,15 @@
       "id": "vertexchaos_site_goals_phase_5_blog_vertexchaos_com_simple_astro_blog_not_emdash_not_started",
       "community": 27,
       "norm_label": "phase 5 \u2014 blog.vertexchaos.com: simple astro blog (not emdash) \u2610 not started"
+    },
+    {
+      "label": "Phase 6 \u2014 Contact form UX + Site design revamp \u2610 Not Started",
+      "file_type": "document",
+      "source_file": "GOALS.md",
+      "source_location": "L68",
+      "id": "vertexchaos_site_goals_phase_6_contact_form_ux_site_design_revamp_not_started",
+      "community": 27,
+      "norm_label": "phase 6 \u2014 contact form ux + site design revamp \u2610 not started"
     },
     {
       "label": "README.md",
@@ -2817,6 +3167,294 @@
       "norm_label": "smoke-test result"
     },
     {
+      "label": "how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L1",
+      "id": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
+      "community": 51,
+      "norm_label": "how-i-wire-claude-into-ops-workflows-with-n8n.md"
+    },
+    {
+      "label": "The pattern",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L13",
+      "id": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_pattern",
+      "community": 51,
+      "norm_label": "the pattern"
+    },
+    {
+      "label": "code:block1 (Trigger \u2192 Collect context \u2192 Claude \u2192 Route to action)",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L17",
+      "id": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_1",
+      "community": 51,
+      "norm_label": "code:block1 (trigger \u2192 collect context \u2192 claude \u2192 route to action)"
+    },
+    {
+      "label": "A real example: alert triage",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L25",
+      "id": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_a_real_example_alert_triage",
+      "community": 51,
+      "norm_label": "a real example: alert triage"
+    },
+    {
+      "label": "code:block2 (You are an ops triage assistant. Given this alert and contex)",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L40",
+      "id": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_2",
+      "community": 51,
+      "norm_label": "code:block2 (you are an ops triage assistant. given this alert and contex)"
+    },
+    {
+      "label": "Structured output is not optional",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L65",
+      "id": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_structured_output_is_not_optional",
+      "community": 51,
+      "norm_label": "structured output is not optional"
+    },
+    {
+      "label": "code:block3 (Respond only with valid JSON matching this schema exactly:)",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L72",
+      "id": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_3",
+      "community": 51,
+      "norm_label": "code:block3 (respond only with valid json matching this schema exactly:)"
+    },
+    {
+      "label": "The context window is your friend",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L83",
+      "id": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_context_window_is_your_friend",
+      "community": 51,
+      "norm_label": "the context window is your friend"
+    },
+    {
+      "label": "What this is not good for",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L93",
+      "id": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_what_this_is_not_good_for",
+      "community": 51,
+      "norm_label": "what this is not good for"
+    },
+    {
+      "label": "The n8n-specific setup",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L101",
+      "id": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_n8n_specific_setup",
+      "community": 51,
+      "norm_label": "the n8n-specific setup"
+    },
+    {
+      "label": "code:json ({)",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L105",
+      "id": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_4",
+      "community": 51,
+      "norm_label": "code:json ({)"
+    },
+    {
+      "label": "code:javascript (const content = $input.item.json.content;)",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L116",
+      "id": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_5",
+      "community": 51,
+      "norm_label": "code:javascript (const content = $input.item.json.content;)"
+    },
+    {
+      "label": "Getting started",
+      "file_type": "document",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L124",
+      "id": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_getting_started",
+      "community": 51,
+      "norm_label": "getting started"
+    },
+    {
+      "label": "what-802-1x-actually-breaks.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L1",
+      "id": "src_content_blog_what_802_1x_actually_breaks_md",
+      "community": 53,
+      "norm_label": "what-802-1x-actually-breaks.md"
+    },
+    {
+      "label": "The devices that will fail",
+      "file_type": "document",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L13",
+      "id": "blog_what_802_1x_actually_breaks_the_devices_that_will_fail",
+      "community": 53,
+      "norm_label": "the devices that will fail"
+    },
+    {
+      "label": "Printers",
+      "file_type": "document",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L15",
+      "id": "blog_what_802_1x_actually_breaks_printers",
+      "community": 53,
+      "norm_label": "printers"
+    },
+    {
+      "label": "VoIP phones",
+      "file_type": "document",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L21",
+      "id": "blog_what_802_1x_actually_breaks_voip_phones",
+      "community": 53,
+      "norm_label": "voip phones"
+    },
+    {
+      "label": "Conference room AV systems",
+      "file_type": "document",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L27",
+      "id": "blog_what_802_1x_actually_breaks_conference_room_av_systems",
+      "community": 53,
+      "norm_label": "conference room av systems"
+    },
+    {
+      "label": "Domain computers during PXE boot",
+      "file_type": "document",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L33",
+      "id": "blog_what_802_1x_actually_breaks_domain_computers_during_pxe_boot",
+      "community": 53,
+      "norm_label": "domain computers during pxe boot"
+    },
+    {
+      "label": "The certificate problem",
+      "file_type": "document",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L39",
+      "id": "blog_what_802_1x_actually_breaks_the_certificate_problem",
+      "community": 53,
+      "norm_label": "the certificate problem"
+    },
+    {
+      "label": "What the NPS log actually tells you",
+      "file_type": "document",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L53",
+      "id": "blog_what_802_1x_actually_breaks_what_the_nps_log_actually_tells_you",
+      "community": 53,
+      "norm_label": "what the nps log actually tells you"
+    },
+    {
+      "label": "The rollout sequence that works",
+      "file_type": "document",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L64",
+      "id": "blog_what_802_1x_actually_breaks_the_rollout_sequence_that_works",
+      "community": 53,
+      "norm_label": "the rollout sequence that works"
+    },
+    {
+      "label": "powershell-whatif-the-safest-flag-you-never-use.md",
+      "file_type": "document",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L1",
+      "id": "src_content_blog_powershell_whatif_the_safest_flag_you_never_use_md",
+      "community": 52,
+      "norm_label": "powershell-whatif-the-safest-flag-you-never-use.md"
+    },
+    {
+      "label": "What -WhatIf actually does",
+      "file_type": "document",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L13",
+      "id": "blog_powershell_whatif_the_safest_flag_you_never_use_what_whatif_actually_does",
+      "community": 52,
+      "norm_label": "what -whatif actually does"
+    },
+    {
+      "label": "code:powershell (Get-ADUser -Filter { Enabled -eq $false -and LastLogonDate -)",
+      "file_type": "document",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L17",
+      "id": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_1",
+      "community": 52,
+      "norm_label": "code:powershell (get-aduser -filter { enabled -eq $false -and lastlogondate -)"
+    },
+    {
+      "label": "code:block2 (What if: Performing the operation \"Set\" on target \"CN=john.s)",
+      "file_type": "document",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L23",
+      "id": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_2",
+      "community": 52,
+      "norm_label": "code:block2 (what if: performing the operation \"set\" on target \"cn=john.s)"
+    },
+    {
+      "label": "The problem: most scripts don't support it",
+      "file_type": "document",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L30",
+      "id": "blog_powershell_whatif_the_safest_flag_you_never_use_the_problem_most_scripts_don_t_support_it",
+      "community": 52,
+      "norm_label": "the problem: most scripts don't support it"
+    },
+    {
+      "label": "code:powershell ([CmdletBinding(SupportsShouldProcess)])",
+      "file_type": "document",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L34",
+      "id": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_3",
+      "community": 52,
+      "norm_label": "code:powershell ([cmdletbinding(supportsshouldprocess)])"
+    },
+    {
+      "label": "The pattern I use for every AD script",
+      "file_type": "document",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L54",
+      "id": "blog_powershell_whatif_the_safest_flag_you_never_use_the_pattern_i_use_for_every_ad_script",
+      "community": 52,
+      "norm_label": "the pattern i use for every ad script"
+    },
+    {
+      "label": "code:powershell ([CmdletBinding(SupportsShouldProcess, ConfirmImpact='High')])",
+      "file_type": "document",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L58",
+      "id": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_4",
+      "community": 52,
+      "norm_label": "code:powershell ([cmdletbinding(supportsshouldprocess, confirmimpact='high')])"
+    },
+    {
+      "label": "Why this matters at scale",
+      "file_type": "document",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L65",
+      "id": "blog_powershell_whatif_the_safest_flag_you_never_use_why_this_matters_at_scale",
+      "community": 52,
+      "norm_label": "why this matters at scale"
+    },
+    {
+      "label": "The three scripts every AD shop should have -WhatIf on",
+      "file_type": "document",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L71",
+      "id": "blog_powershell_whatif_the_safest_flag_you_never_use_the_three_scripts_every_ad_shop_should_have_whatif_on",
+      "community": 52,
+      "norm_label": "the three scripts every ad shop should have -whatif on"
+    },
+    {
       "label": "n8n-claude-ops-automation.md",
       "file_type": "document",
       "source_file": "src/content/case-studies/n8n-claude-ops-automation.md",
@@ -3277,9 +3915,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_renderresult",
-      "confidence_score": 1.0
+      "target": "astro_content_d_renderresult"
     },
     {
       "relation": "contains",
@@ -3287,9 +3925,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_render",
-      "confidence_score": 1.0
+      "target": "astro_content_d_render"
     },
     {
       "relation": "contains",
@@ -3297,9 +3935,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_renderedcontent",
-      "confidence_score": 1.0
+      "target": "astro_content_d_renderedcontent"
     },
     {
       "relation": "contains",
@@ -3307,9 +3945,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_flatten",
-      "confidence_score": 1.0
+      "target": "astro_content_d_flatten"
     },
     {
       "relation": "contains",
@@ -3317,9 +3955,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_collectionkey",
-      "confidence_score": 1.0
+      "target": "astro_content_d_collectionkey"
     },
     {
       "relation": "contains",
@@ -3327,9 +3965,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_collectionentry",
-      "confidence_score": 1.0
+      "target": "astro_content_d_collectionentry"
     },
     {
       "relation": "contains",
@@ -3337,9 +3975,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_contentcollectionkey",
-      "confidence_score": 1.0
+      "target": "astro_content_d_contentcollectionkey"
     },
     {
       "relation": "contains",
@@ -3347,9 +3985,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_datacollectionkey",
-      "confidence_score": 1.0
+      "target": "astro_content_d_datacollectionkey"
     },
     {
       "relation": "contains",
@@ -3357,9 +3995,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_allvaluesof",
-      "confidence_score": 1.0
+      "target": "astro_content_d_allvaluesof"
     },
     {
       "relation": "contains",
@@ -3367,9 +4005,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_validcontententryslug",
-      "confidence_score": 1.0
+      "target": "astro_content_d_validcontententryslug"
     },
     {
       "relation": "contains",
@@ -3377,9 +4015,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_referencedataentry",
-      "confidence_score": 1.0
+      "target": "astro_content_d_referencedataentry"
     },
     {
       "relation": "contains",
@@ -3387,9 +4025,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_referencecontententry",
-      "confidence_score": 1.0
+      "target": "astro_content_d_referencecontententry"
     },
     {
       "relation": "contains",
@@ -3397,9 +4035,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_referenceliveentry",
-      "confidence_score": 1.0
+      "target": "astro_content_d_referenceliveentry"
     },
     {
       "relation": "contains",
@@ -3407,9 +4045,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L155",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_returntypeororiginal",
-      "confidence_score": 1.0
+      "target": "astro_content_d_returntypeororiginal"
     },
     {
       "relation": "contains",
@@ -3417,9 +4055,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_inferentryschema",
-      "confidence_score": 1.0
+      "target": "astro_content_d_inferentryschema"
     },
     {
       "relation": "contains",
@@ -3427,9 +4065,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_contententrymap",
-      "confidence_score": 1.0
+      "target": "astro_content_d_contententrymap"
     },
     {
       "relation": "contains",
@@ -3437,9 +4075,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_dataentrymap",
-      "confidence_score": 1.0
+      "target": "astro_content_d_dataentrymap"
     },
     {
       "relation": "contains",
@@ -3447,9 +4085,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_anyentrymap",
-      "confidence_score": 1.0
+      "target": "astro_content_d_anyentrymap"
     },
     {
       "relation": "contains",
@@ -3457,9 +4095,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_extractloadertypes",
-      "confidence_score": 1.0
+      "target": "astro_content_d_extractloadertypes"
     },
     {
       "relation": "contains",
@@ -3467,9 +4105,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L188",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_extractdatatype",
-      "confidence_score": 1.0
+      "target": "astro_content_d_extractdatatype"
     },
     {
       "relation": "contains",
@@ -3477,9 +4115,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_extractentryfiltertype",
-      "confidence_score": 1.0
+      "target": "astro_content_d_extractentryfiltertype"
     },
     {
       "relation": "contains",
@@ -3487,9 +4125,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_extractcollectionfiltertype",
-      "confidence_score": 1.0
+      "target": "astro_content_d_extractcollectionfiltertype"
     },
     {
       "relation": "contains",
@@ -3497,9 +4135,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_extracterrortype",
-      "confidence_score": 1.0
+      "target": "astro_content_d_extracterrortype"
     },
     {
       "relation": "contains",
@@ -3507,9 +4145,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L193",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_liveloaderdatatype",
-      "confidence_score": 1.0
+      "target": "astro_content_d_liveloaderdatatype"
     },
     {
       "relation": "contains",
@@ -3517,9 +4155,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L199",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_liveloaderentryfiltertype",
-      "confidence_score": 1.0
+      "target": "astro_content_d_liveloaderentryfiltertype"
     },
     {
       "relation": "contains",
@@ -3527,9 +4165,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_liveloadercollectionfiltertype",
-      "confidence_score": 1.0
+      "target": "astro_content_d_liveloadercollectionfiltertype"
     },
     {
       "relation": "contains",
@@ -3537,9 +4175,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_liveloadererrortype",
-      "confidence_score": 1.0
+      "target": "astro_content_d_liveloadererrortype"
     },
     {
       "relation": "contains",
@@ -3547,9 +4185,9 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L207",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_contentconfig",
-      "confidence_score": 1.0
+      "target": "astro_content_d_contentconfig"
     },
     {
       "relation": "contains",
@@ -3557,8 +4195,248 @@
       "source_file": ".astro/content.d.ts",
       "source_location": "L208",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_content_d_ts",
-      "target": "astro_content_d_livecontentconfig",
+      "target": "astro_content_d_livecontentconfig"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "astro_collections_blog_schema_json",
+      "target": "collections_blog_schema_ref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "astro_collections_blog_schema_json",
+      "target": "collections_blog_schema_definitions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "astro_collections_blog_schema_json",
+      "target": "collections_blog_schema_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "collections_blog_schema_definitions",
+      "target": "collections_blog_schema_definitions_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "collections_blog_schema_definitions_blog",
+      "target": "collections_blog_schema_blog_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "collections_blog_schema_definitions_blog",
+      "target": "collections_blog_schema_blog_properties",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "collections_blog_schema_definitions_blog",
+      "target": "collections_blog_schema_blog_required",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "collections_blog_schema_definitions_blog",
+      "target": "collections_blog_schema_blog_additionalproperties",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "collections_blog_schema_blog_properties",
+      "target": "collections_blog_schema_properties_title",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "collections_blog_schema_blog_properties",
+      "target": "collections_blog_schema_properties_date",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "collections_blog_schema_blog_properties",
+      "target": "collections_blog_schema_properties_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "collections_blog_schema_blog_properties",
+      "target": "collections_blog_schema_properties_tags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "collections_blog_schema_blog_properties",
+      "target": "collections_blog_schema_properties_draft",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "collections_blog_schema_blog_properties",
+      "target": "collections_blog_schema_properties_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "collections_blog_schema_properties_title",
+      "target": "collections_blog_schema_title_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "collections_blog_schema_properties_date",
+      "target": "collections_blog_schema_date_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "collections_blog_schema_properties_summary",
+      "target": "collections_blog_schema_summary_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "collections_blog_schema_properties_tags",
+      "target": "collections_blog_schema_tags_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "collections_blog_schema_properties_tags",
+      "target": "collections_blog_schema_tags_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "collections_blog_schema_properties_tags",
+      "target": "collections_blog_schema_tags_default",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "collections_blog_schema_tags_items",
+      "target": "collections_blog_schema_items_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "collections_blog_schema_properties_draft",
+      "target": "collections_blog_schema_draft_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "collections_blog_schema_properties_draft",
+      "target": "collections_blog_schema_draft_default",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".astro/collections/blog.schema.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "collections_blog_schema_properties_schema",
+      "target": "collections_blog_schema_schema_type",
       "confidence_score": 1.0
     },
     {
@@ -3567,9 +4445,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_collections_case_studies_schema_json",
-      "target": "collections_case_studies_schema_ref",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_ref"
     },
     {
       "relation": "contains",
@@ -3577,9 +4455,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_collections_case_studies_schema_json",
-      "target": "collections_case_studies_schema_definitions",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_definitions"
     },
     {
       "relation": "contains",
@@ -3587,9 +4465,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_collections_case_studies_schema_json",
-      "target": "collections_case_studies_schema_schema",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_schema"
     },
     {
       "relation": "contains",
@@ -3597,9 +4475,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_definitions",
-      "target": "collections_case_studies_schema_definitions_case_studies",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_definitions_case_studies"
     },
     {
       "relation": "contains",
@@ -3607,9 +4485,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_definitions_case_studies",
-      "target": "collections_case_studies_schema_case_studies_type",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_case_studies_type"
     },
     {
       "relation": "contains",
@@ -3617,9 +4495,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_definitions_case_studies",
-      "target": "collections_case_studies_schema_case_studies_properties",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_case_studies_properties"
     },
     {
       "relation": "contains",
@@ -3627,9 +4505,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_definitions_case_studies",
-      "target": "collections_case_studies_schema_case_studies_required",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_case_studies_required"
     },
     {
       "relation": "contains",
@@ -3637,9 +4515,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_definitions_case_studies",
-      "target": "collections_case_studies_schema_case_studies_additionalproperties",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_case_studies_additionalproperties"
     },
     {
       "relation": "contains",
@@ -3647,9 +4525,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_case_studies_properties",
-      "target": "collections_case_studies_schema_properties_title",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_properties_title"
     },
     {
       "relation": "contains",
@@ -3657,9 +4535,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_case_studies_properties",
-      "target": "collections_case_studies_schema_properties_summary",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_properties_summary"
     },
     {
       "relation": "contains",
@@ -3667,9 +4545,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_case_studies_properties",
-      "target": "collections_case_studies_schema_properties_tags",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_properties_tags"
     },
     {
       "relation": "contains",
@@ -3677,9 +4555,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_case_studies_properties",
-      "target": "collections_case_studies_schema_properties_when",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_properties_when"
     },
     {
       "relation": "contains",
@@ -3687,9 +4565,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_case_studies_properties",
-      "target": "collections_case_studies_schema_properties_repo",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_properties_repo"
     },
     {
       "relation": "contains",
@@ -3697,9 +4575,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_case_studies_properties",
-      "target": "collections_case_studies_schema_properties_kind",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_properties_kind"
     },
     {
       "relation": "contains",
@@ -3707,9 +4585,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_case_studies_properties",
-      "target": "collections_case_studies_schema_properties_schema",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_properties_schema"
     },
     {
       "relation": "contains",
@@ -3717,9 +4595,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_properties_title",
-      "target": "collections_case_studies_schema_title_type",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_title_type"
     },
     {
       "relation": "contains",
@@ -3727,9 +4605,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_properties_summary",
-      "target": "collections_case_studies_schema_summary_type",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_summary_type"
     },
     {
       "relation": "contains",
@@ -3737,9 +4615,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_properties_tags",
-      "target": "collections_case_studies_schema_tags_type",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_tags_type"
     },
     {
       "relation": "contains",
@@ -3747,9 +4625,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_properties_tags",
-      "target": "collections_case_studies_schema_tags_items",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_tags_items"
     },
     {
       "relation": "contains",
@@ -3757,9 +4635,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_properties_tags",
-      "target": "collections_case_studies_schema_tags_default",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_tags_default"
     },
     {
       "relation": "contains",
@@ -3767,9 +4645,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_tags_items",
-      "target": "collections_case_studies_schema_items_type",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_items_type"
     },
     {
       "relation": "contains",
@@ -3777,9 +4655,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_properties_when",
-      "target": "collections_case_studies_schema_when_type",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_when_type"
     },
     {
       "relation": "contains",
@@ -3787,9 +4665,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_properties_repo",
-      "target": "collections_case_studies_schema_repo_type",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_repo_type"
     },
     {
       "relation": "contains",
@@ -3797,9 +4675,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_properties_kind",
-      "target": "collections_case_studies_schema_kind_type",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_kind_type"
     },
     {
       "relation": "contains",
@@ -3807,9 +4685,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_properties_kind",
-      "target": "collections_case_studies_schema_kind_enum",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_kind_enum"
     },
     {
       "relation": "contains",
@@ -3817,9 +4695,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_properties_kind",
-      "target": "collections_case_studies_schema_kind_default",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_kind_default"
     },
     {
       "relation": "contains",
@@ -3827,9 +4705,9 @@
       "source_file": ".astro/collections/case-studies.schema.json",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_case_studies_schema_properties_schema",
-      "target": "collections_case_studies_schema_schema_type",
-      "confidence_score": 1.0
+      "target": "collections_case_studies_schema_schema_type"
     },
     {
       "relation": "contains",
@@ -3958,6 +4836,16 @@
       "source_file": "src/content/config.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "source": "src_content_config_ts",
+      "target": "content_config_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/config.ts",
+      "source_location": "L15",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_content_config_ts",
       "target": "content_config_collections"
@@ -4015,17 +4903,17 @@
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/about.astro",
+      "confidence_score": 1.0,
       "source": "src_pages_about_astro",
-      "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site",
-      "confidence_score": 1.0
+      "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site"
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/services.astro",
+      "confidence_score": 1.0,
       "source": "src_pages_services_astro",
-      "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site",
-      "confidence_score": 1.0
+      "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site"
     },
     {
       "relation": "imports_from",
@@ -4042,6 +4930,22 @@
       "confidence_score": 1.0,
       "source": "src_pages_404_astro",
       "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site"
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source": "src_pages_blog_slug_astro",
+      "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/index.astro",
+      "source": "src_pages_blog_index_astro",
+      "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -4063,9 +4967,9 @@
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/layouts/BaseLayout.astro",
+      "confidence_score": 1.0,
       "source": "src_layouts_baselayout_astro",
-      "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site",
-      "confidence_score": 1.0
+      "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site"
     },
     {
       "relation": "imports_from",
@@ -4135,6 +5039,14 @@
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
+      "source_file": "src/pages/thanks.astro",
+      "source": "src_pages_thanks_astro",
+      "target": "src_layouts_baselayout_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
       "source_file": "src/pages/about.astro",
       "confidence_score": 1.0,
       "source": "src_pages_about_astro",
@@ -4159,6 +5071,22 @@
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source": "src_pages_blog_slug_astro",
+      "target": "src_layouts_baselayout_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/index.astro",
+      "source": "src_pages_blog_index_astro",
+      "target": "src_layouts_baselayout_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
       "source_file": "src/pages/work/[slug].astro",
       "confidence_score": 1.0,
       "source": "src_pages_work_slug_astro",
@@ -4179,9 +5107,9 @@
       "source_file": "src/layouts/BaseLayout.astro",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_layouts_baselayout_astro",
-      "target": "src_config_site_ts",
-      "confidence_score": 1.0
+      "target": "src_config_site_ts"
     },
     {
       "relation": "imports",
@@ -4190,9 +5118,9 @@
       "source_file": "src/layouts/BaseLayout.astro",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_layouts_baselayout_astro",
-      "target": "config_site_site",
-      "confidence_score": 1.0
+      "target": "config_site_site"
     },
     {
       "relation": "contains",
@@ -4200,9 +5128,9 @@
       "source_file": "src/layouts/BaseLayout.astro",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_layouts_baselayout_astro",
-      "target": "layouts_baselayout_ogtitle",
-      "confidence_score": 1.0
+      "target": "layouts_baselayout_ogtitle"
     },
     {
       "relation": "contains",
@@ -4210,9 +5138,9 @@
       "source_file": "src/layouts/BaseLayout.astro",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_layouts_baselayout_astro",
-      "target": "layouts_baselayout_defaultjsonld",
-      "confidence_score": 1.0
+      "target": "layouts_baselayout_defaultjsonld"
     },
     {
       "relation": "contains",
@@ -4220,9 +5148,9 @@
       "source_file": "src/layouts/BaseLayout.astro",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_layouts_baselayout_astro",
-      "target": "layouts_baselayout_structureddata",
-      "confidence_score": 1.0
+      "target": "layouts_baselayout_structureddata"
     },
     {
       "relation": "imports_from",
@@ -4255,15 +5183,45 @@
       "target": "config_site_site"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/contact.astro",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "src_pages_contact_astro",
+      "target": "pages_contact_wrap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/contact.astro",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "src_pages_contact_astro",
+      "target": "pages_contact_btn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/contact.astro",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "src_pages_contact_astro",
+      "target": "pages_contact_errbox",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/about.astro",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_about_astro",
-      "target": "src_config_site_ts",
-      "confidence_score": 1.0
+      "target": "src_config_site_ts"
     },
     {
       "relation": "imports",
@@ -4272,9 +5230,9 @@
       "source_file": "src/pages/about.astro",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_about_astro",
-      "target": "config_site_site",
-      "confidence_score": 1.0
+      "target": "config_site_site"
     },
     {
       "relation": "contains",
@@ -4282,9 +5240,9 @@
       "source_file": "src/pages/about.astro",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_about_astro",
-      "target": "pages_about_personjsonld",
-      "confidence_score": 1.0
+      "target": "pages_about_personjsonld"
     },
     {
       "relation": "imports_from",
@@ -4293,9 +5251,9 @@
       "source_file": "src/pages/services.astro",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_services_astro",
-      "target": "src_config_site_ts",
-      "confidence_score": 1.0
+      "target": "src_config_site_ts"
     },
     {
       "relation": "imports",
@@ -4304,9 +5262,9 @@
       "source_file": "src/pages/services.astro",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_services_astro",
-      "target": "config_site_site",
-      "confidence_score": 1.0
+      "target": "config_site_site"
     },
     {
       "relation": "contains",
@@ -4314,9 +5272,9 @@
       "source_file": "src/pages/services.astro",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_services_astro",
-      "target": "pages_services_infra",
-      "confidence_score": 1.0
+      "target": "pages_services_infra"
     },
     {
       "relation": "contains",
@@ -4324,9 +5282,9 @@
       "source_file": "src/pages/services.astro",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_services_astro",
-      "target": "pages_services_retainers",
-      "confidence_score": 1.0
+      "target": "pages_services_retainers"
     },
     {
       "relation": "contains",
@@ -4334,9 +5292,9 @@
       "source_file": "src/pages/services.astro",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_services_astro",
-      "target": "pages_services_ai",
-      "confidence_score": 1.0
+      "target": "pages_services_ai"
     },
     {
       "relation": "imports_from",
@@ -4366,9 +5324,9 @@
       "source_file": "src/pages/index.astro",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_index_astro",
-      "target": "pages_index_homejsonld",
-      "confidence_score": 1.0
+      "target": "pages_index_homejsonld"
     },
     {
       "relation": "contains",
@@ -4444,6 +5402,144 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_blog_slug_astro",
+      "target": "src_config_site_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_blog_slug_astro",
+      "target": "config_site_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_pages_blog_slug_astro",
+      "target": "astro_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_pages_blog_slug_astro",
+      "target": "blog_slug_getstaticpaths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_pages_blog_slug_astro",
+      "target": "blog_slug_datestr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_pages_blog_slug_astro",
+      "target": "blog_slug_articlejsonld",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/index.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_pages_blog_index_astro",
+      "target": "astro_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/work/[slug].astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_pages_work_slug_astro",
+      "target": "astro_content"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/work/index.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_pages_work_index_astro",
+      "target": "astro_content"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/index.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_blog_index_astro",
+      "target": "src_config_site_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/index.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_blog_index_astro",
+      "target": "config_site_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/index.astro",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_pages_blog_index_astro",
+      "target": "blog_index_posts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/index.astro",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_pages_blog_index_astro",
+      "target": "blog_index_datestr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/pages/work/[slug].astro",
       "source_location": "L4",
       "weight": 1.0,
@@ -4463,17 +5559,6 @@
       "target": "config_site_site"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/pages/work/[slug].astro",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_pages_work_slug_astro",
-      "target": "astro_content"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/work/[slug].astro",
@@ -4482,17 +5567,6 @@
       "confidence_score": 1.0,
       "source": "src_pages_work_slug_astro",
       "target": "work_slug_getstaticpaths"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/pages/work/index.astro",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_pages_work_index_astro",
-      "target": "astro_content"
     },
     {
       "relation": "imports_from",
@@ -4532,9 +5606,9 @@
       "source_file": "src/pages/work/index.astro",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_work_index_astro",
-      "target": "work_index_cliententries",
-      "confidence_score": 1.0
+      "target": "work_index_cliententries"
     },
     {
       "relation": "contains",
@@ -4542,9 +5616,9 @@
       "source_file": "src/pages/work/index.astro",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_work_index_astro",
-      "target": "work_index_labentries",
-      "confidence_score": 1.0
+      "target": "work_index_labentries"
     },
     {
       "relation": "contains",
@@ -4552,9 +5626,9 @@
       "source_file": "src/pages/work/index.astro",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_work_index_astro",
-      "target": "work_index_string",
-      "confidence_score": 1.0
+      "target": "work_index_string"
     },
     {
       "relation": "contains",
@@ -4682,9 +5756,9 @@
       "source_file": "TODO.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vertexchaos_site_todo_todo_md_vertexchaos_site",
-      "target": "vertexchaos_site_todo_phase_2_core_pages_services_about_contact",
-      "confidence_score": 1.0
+      "target": "vertexchaos_site_todo_phase_2_core_pages_services_about_contact"
     },
     {
       "relation": "contains",
@@ -4692,9 +5766,9 @@
       "source_file": "TODO.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vertexchaos_site_todo_todo_md_vertexchaos_site",
-      "target": "vertexchaos_site_todo_phase_3_work_case_studies",
-      "confidence_score": 1.0
+      "target": "vertexchaos_site_todo_phase_3_work_case_studies"
     },
     {
       "relation": "contains",
@@ -4702,9 +5776,9 @@
       "source_file": "TODO.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vertexchaos_site_todo_todo_md_vertexchaos_site",
-      "target": "vertexchaos_site_todo_phase_4_seo_trust_signals",
-      "confidence_score": 1.0
+      "target": "vertexchaos_site_todo_phase_4_seo_trust_signals"
     },
     {
       "relation": "contains",
@@ -4712,8 +5786,18 @@
       "source_file": "TODO.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vertexchaos_site_todo_todo_md_vertexchaos_site",
-      "target": "vertexchaos_site_todo_phase_5_astro_blog",
+      "target": "vertexchaos_site_todo_phase_5_astro_blog"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TODO.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "vertexchaos_site_todo_todo_md_vertexchaos_site",
+      "target": "vertexchaos_site_todo_phase_6_contact_form_ux_design_revamp",
       "confidence_score": 1.0
     },
     {
@@ -4862,9 +5946,9 @@
       "source_file": "GOALS.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vertexchaos_site_goals_goals_md_vertexchaos_site",
-      "target": "vertexchaos_site_goals_phase_2_core_pages_services_about_contact_revamp_not_started",
-      "confidence_score": 1.0
+      "target": "vertexchaos_site_goals_phase_2_core_pages_services_about_contact_revamp_not_started"
     },
     {
       "relation": "contains",
@@ -4872,9 +5956,9 @@
       "source_file": "GOALS.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vertexchaos_site_goals_goals_md_vertexchaos_site",
-      "target": "vertexchaos_site_goals_phase_3_work_page_real_case_studies_ai_n8n_cases_not_started",
-      "confidence_score": 1.0
+      "target": "vertexchaos_site_goals_phase_3_work_page_real_case_studies_ai_n8n_cases_not_started"
     },
     {
       "relation": "contains",
@@ -4882,9 +5966,9 @@
       "source_file": "GOALS.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vertexchaos_site_goals_goals_md_vertexchaos_site",
-      "target": "vertexchaos_site_goals_phase_4_seo_social_proof_trust_signals_not_started",
-      "confidence_score": 1.0
+      "target": "vertexchaos_site_goals_phase_4_seo_social_proof_trust_signals_not_started"
     },
     {
       "relation": "contains",
@@ -4892,8 +5976,18 @@
       "source_file": "GOALS.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vertexchaos_site_goals_goals_md_vertexchaos_site",
-      "target": "vertexchaos_site_goals_phase_5_blog_vertexchaos_com_simple_astro_blog_not_emdash_not_started",
+      "target": "vertexchaos_site_goals_phase_5_blog_vertexchaos_com_simple_astro_blog_not_emdash_not_started"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GOALS.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "vertexchaos_site_goals_goals_md_vertexchaos_site",
+      "target": "vertexchaos_site_goals_phase_6_contact_form_ux_site_design_revamp_not_started",
       "confidence_score": 1.0
     },
     {
@@ -6169,12 +7263,302 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_pattern",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_a_real_example_alert_triage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_structured_output_is_not_optional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_context_window_is_your_friend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_what_this_is_not_good_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_n8n_specific_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_getting_started",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_pattern",
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_a_real_example_alert_triage",
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_structured_output_is_not_optional",
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_n8n_specific_setup",
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_n8n_specific_setup",
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_content_blog_what_802_1x_actually_breaks_md",
+      "target": "blog_what_802_1x_actually_breaks_the_devices_that_will_fail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "src_content_blog_what_802_1x_actually_breaks_md",
+      "target": "blog_what_802_1x_actually_breaks_the_certificate_problem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "src_content_blog_what_802_1x_actually_breaks_md",
+      "target": "blog_what_802_1x_actually_breaks_what_the_nps_log_actually_tells_you",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "src_content_blog_what_802_1x_actually_breaks_md",
+      "target": "blog_what_802_1x_actually_breaks_the_rollout_sequence_that_works",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "blog_what_802_1x_actually_breaks_the_devices_that_will_fail",
+      "target": "blog_what_802_1x_actually_breaks_printers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "blog_what_802_1x_actually_breaks_the_devices_that_will_fail",
+      "target": "blog_what_802_1x_actually_breaks_voip_phones",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "blog_what_802_1x_actually_breaks_the_devices_that_will_fail",
+      "target": "blog_what_802_1x_actually_breaks_conference_room_av_systems",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "blog_what_802_1x_actually_breaks_the_devices_that_will_fail",
+      "target": "blog_what_802_1x_actually_breaks_domain_computers_during_pxe_boot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_content_blog_powershell_whatif_the_safest_flag_you_never_use_md",
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_what_whatif_actually_does",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_content_blog_powershell_whatif_the_safest_flag_you_never_use_md",
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_the_problem_most_scripts_don_t_support_it",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "src_content_blog_powershell_whatif_the_safest_flag_you_never_use_md",
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_the_pattern_i_use_for_every_ad_script",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "src_content_blog_powershell_whatif_the_safest_flag_you_never_use_md",
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_why_this_matters_at_scale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "src_content_blog_powershell_whatif_the_safest_flag_you_never_use_md",
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_the_three_scripts_every_ad_shop_should_have_whatif_on",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "blog_powershell_whatif_the_safest_flag_you_never_use_what_whatif_actually_does",
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "blog_powershell_whatif_the_safest_flag_you_never_use_what_whatif_actually_does",
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "blog_powershell_whatif_the_safest_flag_you_never_use_the_problem_most_scripts_don_t_support_it",
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "blog_powershell_whatif_the_safest_flag_you_never_use_the_pattern_i_use_for_every_ad_script",
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/content/case-studies/n8n-claude-ops-automation.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_n8n_claude_ops_automation_md",
-      "target": "case_studies_n8n_claude_ops_automation_the_situation",
-      "confidence_score": 1.0
+      "target": "case_studies_n8n_claude_ops_automation_the_situation"
     },
     {
       "relation": "contains",
@@ -6182,9 +7566,9 @@
       "source_file": "src/content/case-studies/n8n-claude-ops-automation.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_n8n_claude_ops_automation_md",
-      "target": "case_studies_n8n_claude_ops_automation_what_i_delivered",
-      "confidence_score": 1.0
+      "target": "case_studies_n8n_claude_ops_automation_what_i_delivered"
     },
     {
       "relation": "contains",
@@ -6192,9 +7576,9 @@
       "source_file": "src/content/case-studies/n8n-claude-ops-automation.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_n8n_claude_ops_automation_md",
-      "target": "case_studies_n8n_claude_ops_automation_outcome",
-      "confidence_score": 1.0
+      "target": "case_studies_n8n_claude_ops_automation_outcome"
     },
     {
       "relation": "contains",
@@ -6202,9 +7586,9 @@
       "source_file": "src/content/case-studies/m365-migration-security-hardening.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_m365_migration_security_hardening_md",
-      "target": "case_studies_m365_migration_security_hardening_the_situation",
-      "confidence_score": 1.0
+      "target": "case_studies_m365_migration_security_hardening_the_situation"
     },
     {
       "relation": "contains",
@@ -6212,9 +7596,9 @@
       "source_file": "src/content/case-studies/m365-migration-security-hardening.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_m365_migration_security_hardening_md",
-      "target": "case_studies_m365_migration_security_hardening_what_i_delivered",
-      "confidence_score": 1.0
+      "target": "case_studies_m365_migration_security_hardening_what_i_delivered"
     },
     {
       "relation": "contains",
@@ -6222,9 +7606,9 @@
       "source_file": "src/content/case-studies/m365-migration-security-hardening.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_m365_migration_security_hardening_md",
-      "target": "case_studies_m365_migration_security_hardening_outcome",
-      "confidence_score": 1.0
+      "target": "case_studies_m365_migration_security_hardening_outcome"
     },
     {
       "relation": "contains",
@@ -6262,9 +7646,9 @@
       "source_file": "src/content/case-studies/skillradar-jobhunt-lab.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_skillradar_jobhunt_lab_md",
-      "target": "case_studies_skillradar_jobhunt_lab_the_problem",
-      "confidence_score": 1.0
+      "target": "case_studies_skillradar_jobhunt_lab_the_problem"
     },
     {
       "relation": "contains",
@@ -6272,9 +7656,9 @@
       "source_file": "src/content/case-studies/skillradar-jobhunt-lab.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_skillradar_jobhunt_lab_md",
-      "target": "case_studies_skillradar_jobhunt_lab_what_i_built",
-      "confidence_score": 1.0
+      "target": "case_studies_skillradar_jobhunt_lab_what_i_built"
     },
     {
       "relation": "contains",
@@ -6282,9 +7666,9 @@
       "source_file": "src/content/case-studies/skillradar-jobhunt-lab.md",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_skillradar_jobhunt_lab_md",
-      "target": "case_studies_skillradar_jobhunt_lab_stack",
-      "confidence_score": 1.0
+      "target": "case_studies_skillradar_jobhunt_lab_stack"
     },
     {
       "relation": "contains",
@@ -6292,9 +7676,9 @@
       "source_file": "src/content/case-studies/skillradar-jobhunt-lab.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_skillradar_jobhunt_lab_md",
-      "target": "case_studies_skillradar_jobhunt_lab_what_i_learned",
-      "confidence_score": 1.0
+      "target": "case_studies_skillradar_jobhunt_lab_what_i_learned"
     },
     {
       "relation": "contains",
@@ -6302,9 +7686,9 @@
       "source_file": "src/content/case-studies/ad-migration-consolidation.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_ad_migration_consolidation_md",
-      "target": "case_studies_ad_migration_consolidation_the_situation",
-      "confidence_score": 1.0
+      "target": "case_studies_ad_migration_consolidation_the_situation"
     },
     {
       "relation": "contains",
@@ -6312,9 +7696,9 @@
       "source_file": "src/content/case-studies/ad-migration-consolidation.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_ad_migration_consolidation_md",
-      "target": "case_studies_ad_migration_consolidation_what_i_delivered",
-      "confidence_score": 1.0
+      "target": "case_studies_ad_migration_consolidation_what_i_delivered"
     },
     {
       "relation": "contains",
@@ -6322,9 +7706,9 @@
       "source_file": "src/content/case-studies/ad-migration-consolidation.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_case_studies_ad_migration_consolidation_md",
-      "target": "case_studies_ad_migration_consolidation_outcome",
-      "confidence_score": 1.0
+      "target": "case_studies_ad_migration_consolidation_outcome"
     },
     {
       "relation": "contains",
@@ -6428,5 +7812,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9afb101608c5cf3af19b5fe4673b1394a9462464"
+  "built_at_commit": "7a49589568ebdf9247957e92a908e385a7d53a3c"
 }
