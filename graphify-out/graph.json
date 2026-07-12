@@ -1035,7 +1035,7 @@
       "source_file": "src/content/config.ts",
       "source_location": "L1",
       "id": "src_content_config_ts",
-      "community": 1,
+      "community": 54,
       "norm_label": "config.ts"
     },
     {
@@ -1044,7 +1044,7 @@
       "source_file": "src/content/config.ts",
       "source_location": "L3",
       "id": "content_config_casestudies",
-      "community": 1,
+      "community": 54,
       "norm_label": "casestudies"
     },
     {
@@ -1053,7 +1053,7 @@
       "source_file": "src/content/config.ts",
       "source_location": "L15",
       "id": "content_config_blog",
-      "community": 1,
+      "community": 54,
       "norm_label": "blog"
     },
     {
@@ -1062,7 +1062,7 @@
       "source_file": "src/content/config.ts",
       "source_location": "L26",
       "id": "content_config_collections",
-      "community": 1,
+      "community": 54,
       "norm_label": "collections"
     },
     {
@@ -1430,6 +1430,15 @@
       "norm_label": "site"
     },
     {
+      "label": "testimonials",
+      "file_type": "code",
+      "source_file": "src/config/site.ts",
+      "source_location": "L42",
+      "id": "config_site_testimonials",
+      "community": 1,
+      "norm_label": "testimonials"
+    },
+    {
       "label": "ogTitle",
       "file_type": "code",
       "source_file": "src/layouts/BaseLayout.astro",
@@ -1628,6 +1637,51 @@
       "norm_label": "phase 6 \u2014 contact form ux + design revamp"
     },
     {
+      "label": "Phase 7 \u2014 Lighthouse audit + quick wins",
+      "file_type": "document",
+      "source_file": "TODO.md",
+      "source_location": "L47",
+      "id": "vertexchaos_site_todo_phase_7_lighthouse_audit_quick_wins",
+      "community": 25,
+      "norm_label": "phase 7 \u2014 lighthouse audit + quick wins"
+    },
+    {
+      "label": "Phase 8 \u2014 Blog subdomain redirect (manual DNS)",
+      "file_type": "document",
+      "source_file": "TODO.md",
+      "source_location": "L53",
+      "id": "vertexchaos_site_todo_phase_8_blog_subdomain_redirect_manual_dns",
+      "community": 25,
+      "norm_label": "phase 8 \u2014 blog subdomain redirect (manual dns)"
+    },
+    {
+      "label": "Phase 9 \u2014 Case study CTAs",
+      "file_type": "document",
+      "source_file": "TODO.md",
+      "source_location": "L57",
+      "id": "vertexchaos_site_todo_phase_9_case_study_ctas",
+      "community": 25,
+      "norm_label": "phase 9 \u2014 case study ctas"
+    },
+    {
+      "label": "Phase 10 \u2014 Testimonials section",
+      "file_type": "document",
+      "source_file": "TODO.md",
+      "source_location": "L61",
+      "id": "vertexchaos_site_todo_phase_10_testimonials_section",
+      "community": 25,
+      "norm_label": "phase 10 \u2014 testimonials section"
+    },
+    {
+      "label": "Phase 11 \u2014 Mobile nav",
+      "file_type": "document",
+      "source_file": "TODO.md",
+      "source_location": "L66",
+      "id": "vertexchaos_site_todo_phase_11_mobile_nav",
+      "community": 25,
+      "norm_label": "phase 11 \u2014 mobile nav"
+    },
+    {
       "label": "GOALS_TODOS.md",
       "file_type": "document",
       "source_file": "GOALS_TODOS.md",
@@ -1815,6 +1869,51 @@
       "id": "vertexchaos_site_goals_phase_6_contact_form_ux_site_design_revamp_not_started",
       "community": 27,
       "norm_label": "phase 6 \u2014 contact form ux + site design revamp \u2610 not started"
+    },
+    {
+      "label": "Phase 7 \u2014 Lighthouse Audit + Quick Wins \u2610 Not Started",
+      "file_type": "document",
+      "source_file": "GOALS.md",
+      "source_location": "L78",
+      "id": "vertexchaos_site_goals_phase_7_lighthouse_audit_quick_wins_not_started",
+      "community": 27,
+      "norm_label": "phase 7 \u2014 lighthouse audit + quick wins \u2610 not started"
+    },
+    {
+      "label": "Phase 8 \u2014 Blog Subdomain Redirect \u2610 Not Started",
+      "file_type": "document",
+      "source_file": "GOALS.md",
+      "source_location": "L88",
+      "id": "vertexchaos_site_goals_phase_8_blog_subdomain_redirect_not_started",
+      "community": 27,
+      "norm_label": "phase 8 \u2014 blog subdomain redirect \u2610 not started"
+    },
+    {
+      "label": "Phase 9 \u2014 Case Study CTAs \u2610 Not Started",
+      "file_type": "document",
+      "source_file": "GOALS.md",
+      "source_location": "L97",
+      "id": "vertexchaos_site_goals_phase_9_case_study_ctas_not_started",
+      "community": 27,
+      "norm_label": "phase 9 \u2014 case study ctas \u2610 not started"
+    },
+    {
+      "label": "Phase 10 \u2014 Testimonials Section \u2610 Not Started",
+      "file_type": "document",
+      "source_file": "GOALS.md",
+      "source_location": "L106",
+      "id": "vertexchaos_site_goals_phase_10_testimonials_section_not_started",
+      "community": 27,
+      "norm_label": "phase 10 \u2014 testimonials section \u2610 not started"
+    },
+    {
+      "label": "Phase 11 \u2014 Mobile Nav \u2610 Not Started",
+      "file_type": "document",
+      "source_file": "GOALS.md",
+      "source_location": "L116",
+      "id": "vertexchaos_site_goals_phase_11_mobile_nav_not_started",
+      "community": 27,
+      "norm_label": "phase 11 \u2014 mobile nav \u2610 not started"
     },
     {
       "label": "README.md",
@@ -4205,9 +4304,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_collections_blog_schema_json",
-      "target": "collections_blog_schema_ref",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_ref"
     },
     {
       "relation": "contains",
@@ -4215,9 +4314,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_collections_blog_schema_json",
-      "target": "collections_blog_schema_definitions",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_definitions"
     },
     {
       "relation": "contains",
@@ -4225,9 +4324,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "astro_collections_blog_schema_json",
-      "target": "collections_blog_schema_schema",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_schema"
     },
     {
       "relation": "contains",
@@ -4235,9 +4334,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_definitions",
-      "target": "collections_blog_schema_definitions_blog",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_definitions_blog"
     },
     {
       "relation": "contains",
@@ -4245,9 +4344,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_definitions_blog",
-      "target": "collections_blog_schema_blog_type",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_blog_type"
     },
     {
       "relation": "contains",
@@ -4255,9 +4354,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_definitions_blog",
-      "target": "collections_blog_schema_blog_properties",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_blog_properties"
     },
     {
       "relation": "contains",
@@ -4265,9 +4364,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_definitions_blog",
-      "target": "collections_blog_schema_blog_required",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_blog_required"
     },
     {
       "relation": "contains",
@@ -4275,9 +4374,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_definitions_blog",
-      "target": "collections_blog_schema_blog_additionalproperties",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_blog_additionalproperties"
     },
     {
       "relation": "contains",
@@ -4285,9 +4384,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_blog_properties",
-      "target": "collections_blog_schema_properties_title",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_properties_title"
     },
     {
       "relation": "contains",
@@ -4295,9 +4394,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_blog_properties",
-      "target": "collections_blog_schema_properties_date",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_properties_date"
     },
     {
       "relation": "contains",
@@ -4305,9 +4404,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_blog_properties",
-      "target": "collections_blog_schema_properties_summary",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_properties_summary"
     },
     {
       "relation": "contains",
@@ -4315,9 +4414,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_blog_properties",
-      "target": "collections_blog_schema_properties_tags",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_properties_tags"
     },
     {
       "relation": "contains",
@@ -4325,9 +4424,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_blog_properties",
-      "target": "collections_blog_schema_properties_draft",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_properties_draft"
     },
     {
       "relation": "contains",
@@ -4335,9 +4434,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_blog_properties",
-      "target": "collections_blog_schema_properties_schema",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_properties_schema"
     },
     {
       "relation": "contains",
@@ -4345,9 +4444,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_properties_title",
-      "target": "collections_blog_schema_title_type",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_title_type"
     },
     {
       "relation": "contains",
@@ -4355,9 +4454,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_properties_date",
-      "target": "collections_blog_schema_date_type",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_date_type"
     },
     {
       "relation": "contains",
@@ -4365,9 +4464,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_properties_summary",
-      "target": "collections_blog_schema_summary_type",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_summary_type"
     },
     {
       "relation": "contains",
@@ -4375,9 +4474,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_properties_tags",
-      "target": "collections_blog_schema_tags_type",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_tags_type"
     },
     {
       "relation": "contains",
@@ -4385,9 +4484,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_properties_tags",
-      "target": "collections_blog_schema_tags_items",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_tags_items"
     },
     {
       "relation": "contains",
@@ -4395,9 +4494,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_properties_tags",
-      "target": "collections_blog_schema_tags_default",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_tags_default"
     },
     {
       "relation": "contains",
@@ -4405,9 +4504,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_tags_items",
-      "target": "collections_blog_schema_items_type",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_items_type"
     },
     {
       "relation": "contains",
@@ -4415,9 +4514,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_properties_draft",
-      "target": "collections_blog_schema_draft_type",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_draft_type"
     },
     {
       "relation": "contains",
@@ -4425,9 +4524,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_properties_draft",
-      "target": "collections_blog_schema_draft_default",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_draft_default"
     },
     {
       "relation": "contains",
@@ -4435,9 +4534,9 @@
       "source_file": ".astro/collections/blog.schema.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "collections_blog_schema_properties_schema",
-      "target": "collections_blog_schema_schema_type",
-      "confidence_score": 1.0
+      "target": "collections_blog_schema_schema_type"
     },
     {
       "relation": "contains",
@@ -4836,9 +4935,9 @@
       "source_file": "src/content/config.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_config_ts",
-      "target": "content_config_blog",
-      "confidence_score": 1.0
+      "target": "content_config_blog"
     },
     {
       "relation": "contains",
@@ -4935,17 +5034,17 @@
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/blog/[slug].astro",
+      "confidence_score": 1.0,
       "source": "src_pages_blog_slug_astro",
-      "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site",
-      "confidence_score": 1.0
+      "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site"
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/blog/index.astro",
+      "confidence_score": 1.0,
       "source": "src_pages_blog_index_astro",
-      "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site",
-      "confidence_score": 1.0
+      "target": "home_saitama_repos_github_orgs_vertex_chaos_vertexchaos_site_src_config_site"
     },
     {
       "relation": "imports_from",
@@ -5040,9 +5139,9 @@
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/thanks.astro",
+      "confidence_score": 1.0,
       "source": "src_pages_thanks_astro",
-      "target": "src_layouts_baselayout_astro",
-      "confidence_score": 1.0
+      "target": "src_layouts_baselayout_astro"
     },
     {
       "relation": "imports_from",
@@ -5072,17 +5171,17 @@
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/blog/[slug].astro",
+      "confidence_score": 1.0,
       "source": "src_pages_blog_slug_astro",
-      "target": "src_layouts_baselayout_astro",
-      "confidence_score": 1.0
+      "target": "src_layouts_baselayout_astro"
     },
     {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/blog/index.astro",
+      "confidence_score": 1.0,
       "source": "src_pages_blog_index_astro",
-      "target": "src_layouts_baselayout_astro",
-      "confidence_score": 1.0
+      "target": "src_layouts_baselayout_astro"
     },
     {
       "relation": "imports_from",
@@ -5188,9 +5287,9 @@
       "source_file": "src/pages/contact.astro",
       "source_location": "L119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_contact_astro",
-      "target": "pages_contact_wrap",
-      "confidence_score": 1.0
+      "target": "pages_contact_wrap"
     },
     {
       "relation": "contains",
@@ -5198,9 +5297,9 @@
       "source_file": "src/pages/contact.astro",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_contact_astro",
-      "target": "pages_contact_btn",
-      "confidence_score": 1.0
+      "target": "pages_contact_btn"
     },
     {
       "relation": "contains",
@@ -5208,9 +5307,9 @@
       "source_file": "src/pages/contact.astro",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_contact_astro",
-      "target": "pages_contact_errbox",
-      "confidence_score": 1.0
+      "target": "pages_contact_errbox"
     },
     {
       "relation": "imports_from",
@@ -5319,6 +5418,17 @@
       "target": "config_site_site"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_index_astro",
+      "target": "config_site_testimonials",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/pages/index.astro",
@@ -5405,9 +5515,9 @@
       "source_file": "src/pages/blog/[slug].astro",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_blog_slug_astro",
-      "target": "src_config_site_ts",
-      "confidence_score": 1.0
+      "target": "src_config_site_ts"
     },
     {
       "relation": "imports",
@@ -5416,9 +5526,9 @@
       "source_file": "src/pages/blog/[slug].astro",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_blog_slug_astro",
-      "target": "config_site_site",
-      "confidence_score": 1.0
+      "target": "config_site_site"
     },
     {
       "relation": "imports_from",
@@ -5427,9 +5537,9 @@
       "source_file": "src/pages/blog/[slug].astro",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_blog_slug_astro",
-      "target": "astro_content",
-      "confidence_score": 1.0
+      "target": "astro_content"
     },
     {
       "relation": "contains",
@@ -5437,9 +5547,9 @@
       "source_file": "src/pages/blog/[slug].astro",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_blog_slug_astro",
-      "target": "blog_slug_getstaticpaths",
-      "confidence_score": 1.0
+      "target": "blog_slug_getstaticpaths"
     },
     {
       "relation": "contains",
@@ -5447,9 +5557,9 @@
       "source_file": "src/pages/blog/[slug].astro",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_blog_slug_astro",
-      "target": "blog_slug_datestr",
-      "confidence_score": 1.0
+      "target": "blog_slug_datestr"
     },
     {
       "relation": "contains",
@@ -5457,9 +5567,9 @@
       "source_file": "src/pages/blog/[slug].astro",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_blog_slug_astro",
-      "target": "blog_slug_articlejsonld",
-      "confidence_score": 1.0
+      "target": "blog_slug_articlejsonld"
     },
     {
       "relation": "imports_from",
@@ -5468,9 +5578,9 @@
       "source_file": "src/pages/blog/index.astro",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_blog_index_astro",
-      "target": "astro_content",
-      "confidence_score": 1.0
+      "target": "astro_content"
     },
     {
       "relation": "imports_from",
@@ -5501,9 +5611,9 @@
       "source_file": "src/pages/blog/index.astro",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_blog_index_astro",
-      "target": "src_config_site_ts",
-      "confidence_score": 1.0
+      "target": "src_config_site_ts"
     },
     {
       "relation": "imports",
@@ -5512,9 +5622,9 @@
       "source_file": "src/pages/blog/index.astro",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_blog_index_astro",
-      "target": "config_site_site",
-      "confidence_score": 1.0
+      "target": "config_site_site"
     },
     {
       "relation": "contains",
@@ -5522,9 +5632,9 @@
       "source_file": "src/pages/blog/index.astro",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_blog_index_astro",
-      "target": "blog_index_posts",
-      "confidence_score": 1.0
+      "target": "blog_index_posts"
     },
     {
       "relation": "contains",
@@ -5532,9 +5642,9 @@
       "source_file": "src/pages/blog/index.astro",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_pages_blog_index_astro",
-      "target": "blog_index_datestr",
-      "confidence_score": 1.0
+      "target": "blog_index_datestr"
     },
     {
       "relation": "imports_from",
@@ -5639,6 +5749,16 @@
       "confidence_score": 1.0,
       "source": "src_config_site_ts",
       "target": "config_site_site"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/config/site.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "src_config_site_ts",
+      "target": "config_site_testimonials",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5796,9 +5916,59 @@
       "source_file": "TODO.md",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vertexchaos_site_todo_todo_md_vertexchaos_site",
-      "target": "vertexchaos_site_todo_phase_6_contact_form_ux_design_revamp",
-      "confidence_score": 1.0
+      "target": "vertexchaos_site_todo_phase_6_contact_form_ux_design_revamp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TODO.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "vertexchaos_site_todo_todo_md_vertexchaos_site",
+      "target": "vertexchaos_site_todo_phase_7_lighthouse_audit_quick_wins"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TODO.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "vertexchaos_site_todo_todo_md_vertexchaos_site",
+      "target": "vertexchaos_site_todo_phase_8_blog_subdomain_redirect_manual_dns"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TODO.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "vertexchaos_site_todo_todo_md_vertexchaos_site",
+      "target": "vertexchaos_site_todo_phase_9_case_study_ctas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TODO.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "vertexchaos_site_todo_todo_md_vertexchaos_site",
+      "target": "vertexchaos_site_todo_phase_10_testimonials_section"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "TODO.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "vertexchaos_site_todo_todo_md_vertexchaos_site",
+      "target": "vertexchaos_site_todo_phase_11_mobile_nav"
     },
     {
       "relation": "contains",
@@ -5986,9 +6156,59 @@
       "source_file": "GOALS.md",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vertexchaos_site_goals_goals_md_vertexchaos_site",
-      "target": "vertexchaos_site_goals_phase_6_contact_form_ux_site_design_revamp_not_started",
-      "confidence_score": 1.0
+      "target": "vertexchaos_site_goals_phase_6_contact_form_ux_site_design_revamp_not_started"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GOALS.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "vertexchaos_site_goals_goals_md_vertexchaos_site",
+      "target": "vertexchaos_site_goals_phase_7_lighthouse_audit_quick_wins_not_started"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GOALS.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "vertexchaos_site_goals_goals_md_vertexchaos_site",
+      "target": "vertexchaos_site_goals_phase_8_blog_subdomain_redirect_not_started"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GOALS.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "vertexchaos_site_goals_goals_md_vertexchaos_site",
+      "target": "vertexchaos_site_goals_phase_9_case_study_ctas_not_started"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GOALS.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "vertexchaos_site_goals_goals_md_vertexchaos_site",
+      "target": "vertexchaos_site_goals_phase_10_testimonials_section_not_started"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GOALS.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "vertexchaos_site_goals_goals_md_vertexchaos_site",
+      "target": "vertexchaos_site_goals_phase_11_mobile_nav_not_started"
     },
     {
       "relation": "contains",
@@ -7266,9 +7486,9 @@
       "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
-      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_pattern",
-      "confidence_score": 1.0
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_pattern"
     },
     {
       "relation": "contains",
@@ -7276,9 +7496,9 @@
       "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
-      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_a_real_example_alert_triage",
-      "confidence_score": 1.0
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_a_real_example_alert_triage"
     },
     {
       "relation": "contains",
@@ -7286,9 +7506,9 @@
       "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
-      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_structured_output_is_not_optional",
-      "confidence_score": 1.0
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_structured_output_is_not_optional"
     },
     {
       "relation": "contains",
@@ -7296,9 +7516,9 @@
       "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
-      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_context_window_is_your_friend",
-      "confidence_score": 1.0
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_context_window_is_your_friend"
     },
     {
       "relation": "contains",
@@ -7306,9 +7526,9 @@
       "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
-      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_what_this_is_not_good_for",
-      "confidence_score": 1.0
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_what_this_is_not_good_for"
     },
     {
       "relation": "contains",
@@ -7316,9 +7536,9 @@
       "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
-      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_n8n_specific_setup",
-      "confidence_score": 1.0
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_n8n_specific_setup"
     },
     {
       "relation": "contains",
@@ -7326,9 +7546,9 @@
       "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_how_i_wire_claude_into_ops_workflows_with_n8n_md",
-      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_getting_started",
-      "confidence_score": 1.0
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_getting_started"
     },
     {
       "relation": "contains",
@@ -7336,9 +7556,9 @@
       "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_pattern",
-      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_1",
-      "confidence_score": 1.0
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_1"
     },
     {
       "relation": "contains",
@@ -7346,9 +7566,9 @@
       "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_a_real_example_alert_triage",
-      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_2",
-      "confidence_score": 1.0
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_2"
     },
     {
       "relation": "contains",
@@ -7356,9 +7576,9 @@
       "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_structured_output_is_not_optional",
-      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_3",
-      "confidence_score": 1.0
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_3"
     },
     {
       "relation": "contains",
@@ -7366,9 +7586,9 @@
       "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_n8n_specific_setup",
-      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_4",
-      "confidence_score": 1.0
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_4"
     },
     {
       "relation": "contains",
@@ -7376,9 +7596,9 @@
       "source_file": "src/content/blog/how-i-wire-claude-into-ops-workflows-with-n8n.md",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_the_n8n_specific_setup",
-      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_5",
-      "confidence_score": 1.0
+      "target": "blog_how_i_wire_claude_into_ops_workflows_with_n8n_codeblock_5"
     },
     {
       "relation": "contains",
@@ -7386,9 +7606,9 @@
       "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_what_802_1x_actually_breaks_md",
-      "target": "blog_what_802_1x_actually_breaks_the_devices_that_will_fail",
-      "confidence_score": 1.0
+      "target": "blog_what_802_1x_actually_breaks_the_devices_that_will_fail"
     },
     {
       "relation": "contains",
@@ -7396,9 +7616,9 @@
       "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_what_802_1x_actually_breaks_md",
-      "target": "blog_what_802_1x_actually_breaks_the_certificate_problem",
-      "confidence_score": 1.0
+      "target": "blog_what_802_1x_actually_breaks_the_certificate_problem"
     },
     {
       "relation": "contains",
@@ -7406,9 +7626,9 @@
       "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_what_802_1x_actually_breaks_md",
-      "target": "blog_what_802_1x_actually_breaks_what_the_nps_log_actually_tells_you",
-      "confidence_score": 1.0
+      "target": "blog_what_802_1x_actually_breaks_what_the_nps_log_actually_tells_you"
     },
     {
       "relation": "contains",
@@ -7416,9 +7636,9 @@
       "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_what_802_1x_actually_breaks_md",
-      "target": "blog_what_802_1x_actually_breaks_the_rollout_sequence_that_works",
-      "confidence_score": 1.0
+      "target": "blog_what_802_1x_actually_breaks_the_rollout_sequence_that_works"
     },
     {
       "relation": "contains",
@@ -7426,9 +7646,9 @@
       "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_what_802_1x_actually_breaks_the_devices_that_will_fail",
-      "target": "blog_what_802_1x_actually_breaks_printers",
-      "confidence_score": 1.0
+      "target": "blog_what_802_1x_actually_breaks_printers"
     },
     {
       "relation": "contains",
@@ -7436,9 +7656,9 @@
       "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_what_802_1x_actually_breaks_the_devices_that_will_fail",
-      "target": "blog_what_802_1x_actually_breaks_voip_phones",
-      "confidence_score": 1.0
+      "target": "blog_what_802_1x_actually_breaks_voip_phones"
     },
     {
       "relation": "contains",
@@ -7446,9 +7666,9 @@
       "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_what_802_1x_actually_breaks_the_devices_that_will_fail",
-      "target": "blog_what_802_1x_actually_breaks_conference_room_av_systems",
-      "confidence_score": 1.0
+      "target": "blog_what_802_1x_actually_breaks_conference_room_av_systems"
     },
     {
       "relation": "contains",
@@ -7456,9 +7676,9 @@
       "source_file": "src/content/blog/what-802-1x-actually-breaks.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_what_802_1x_actually_breaks_the_devices_that_will_fail",
-      "target": "blog_what_802_1x_actually_breaks_domain_computers_during_pxe_boot",
-      "confidence_score": 1.0
+      "target": "blog_what_802_1x_actually_breaks_domain_computers_during_pxe_boot"
     },
     {
       "relation": "contains",
@@ -7466,9 +7686,9 @@
       "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_powershell_whatif_the_safest_flag_you_never_use_md",
-      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_what_whatif_actually_does",
-      "confidence_score": 1.0
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_what_whatif_actually_does"
     },
     {
       "relation": "contains",
@@ -7476,9 +7696,9 @@
       "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_powershell_whatif_the_safest_flag_you_never_use_md",
-      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_the_problem_most_scripts_don_t_support_it",
-      "confidence_score": 1.0
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_the_problem_most_scripts_don_t_support_it"
     },
     {
       "relation": "contains",
@@ -7486,9 +7706,9 @@
       "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_powershell_whatif_the_safest_flag_you_never_use_md",
-      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_the_pattern_i_use_for_every_ad_script",
-      "confidence_score": 1.0
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_the_pattern_i_use_for_every_ad_script"
     },
     {
       "relation": "contains",
@@ -7496,9 +7716,9 @@
       "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_powershell_whatif_the_safest_flag_you_never_use_md",
-      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_why_this_matters_at_scale",
-      "confidence_score": 1.0
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_why_this_matters_at_scale"
     },
     {
       "relation": "contains",
@@ -7506,9 +7726,9 @@
       "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_content_blog_powershell_whatif_the_safest_flag_you_never_use_md",
-      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_the_three_scripts_every_ad_shop_should_have_whatif_on",
-      "confidence_score": 1.0
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_the_three_scripts_every_ad_shop_should_have_whatif_on"
     },
     {
       "relation": "contains",
@@ -7516,9 +7736,9 @@
       "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_powershell_whatif_the_safest_flag_you_never_use_what_whatif_actually_does",
-      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_1",
-      "confidence_score": 1.0
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_1"
     },
     {
       "relation": "contains",
@@ -7526,9 +7746,9 @@
       "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_powershell_whatif_the_safest_flag_you_never_use_what_whatif_actually_does",
-      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_2",
-      "confidence_score": 1.0
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_2"
     },
     {
       "relation": "contains",
@@ -7536,9 +7756,9 @@
       "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_powershell_whatif_the_safest_flag_you_never_use_the_problem_most_scripts_don_t_support_it",
-      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_3",
-      "confidence_score": 1.0
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_3"
     },
     {
       "relation": "contains",
@@ -7546,9 +7766,9 @@
       "source_file": "src/content/blog/powershell-whatif-the-safest-flag-you-never-use.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "blog_powershell_whatif_the_safest_flag_you_never_use_the_pattern_i_use_for_every_ad_script",
-      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_4",
-      "confidence_score": 1.0
+      "target": "blog_powershell_whatif_the_safest_flag_you_never_use_codeblock_4"
     },
     {
       "relation": "contains",
@@ -7812,5 +8032,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7a49589568ebdf9247957e92a908e385a7d53a3c"
+  "built_at_commit": "bd9b477d064c39a55008d292664dc7dea02f4d5e"
 }

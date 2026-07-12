@@ -1,16 +1,16 @@
-# Graph Report - vertexchaos-site  (2026-07-06)
+# Graph Report - vertexchaos-site  (2026-07-11)
 
 ## Corpus Check
-- 72 files · ~15,759 words
+- 72 files · ~16,815 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 420 nodes · 404 edges · 54 communities (44 shown, 10 thin omitted)
+- 431 nodes · 416 edges · 55 communities (45 shown, 10 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7a495895`
+- Built from commit: `bd9b477d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -61,15 +61,16 @@
 - [[_COMMUNITY_Community 51|Community 51]]
 - [[_COMMUNITY_Community 52|Community 52]]
 - [[_COMMUNITY_Community 53|Community 53]]
+- [[_COMMUNITY_Community 54|Community 54]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `vertexchaos-site` - 15 edges
 2. `site` - 12 edges
-3. `properties` - 8 edges
-4. `Phase 1 — blog.vertexchaos.com: emdash on Cloudflare Workers ☐ Not Started` - 8 edges
-5. `properties` - 7 edges
-6. `TODO.md — vertexchaos-site` - 7 edges
-7. `GOALS.md — vertexchaos-site` - 7 edges
+3. `TODO.md — vertexchaos-site` - 12 edges
+4. `GOALS.md — vertexchaos-site` - 12 edges
+5. `properties` - 8 edges
+6. `Phase 1 — blog.vertexchaos.com: emdash on Cloudflare Workers ☐ Not Started` - 8 edges
+7. `properties` - 7 edges
 8. `PROJECT INSTRUCTIONS` - 7 edges
 9. `Operator Commands` - 6 edges
 10. `Tool Smoke Test - Gemini` - 6 edges
@@ -77,7 +78,7 @@
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
 
-## Communities (54 total, 10 thin omitted)
+## Communities (55 total, 10 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -85,7 +86,7 @@ Nodes (27): 90-minute operating mode, Agent file strategy, Architecture guardrai
 
 ### Community 1 - "Community 1"
 Cohesion: 0.08
-Nodes (28): dateStr, posts, articleJsonLd, dateStr, site, blog, caseStudies, collections (+20 more)
+Nodes (26): dateStr, posts, articleJsonLd, dateStr, site, testimonials, ../config/site, ../styles/global.css (+18 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.15
@@ -176,12 +177,12 @@ Cohesion: 0.5
 Nodes (3): Outcome, The situation, What I delivered
 
 ### Community 25 - "Community 25"
-Cohesion: 0.25
-Nodes (7): Phase 1 — blog.vertexchaos.com: emdash on Cloudflare Workers, Phase 2 — Core pages: Services + About + Contact, Phase 3 — Work: Case studies, Phase 4 — SEO + Trust signals, Phase 5 — Astro blog, Phase 6 — Contact form UX + Design revamp, TODO.md — vertexchaos-site
+Cohesion: 0.15
+Nodes (12): Phase 10 — Testimonials section, Phase 11 — Mobile nav, Phase 1 — blog.vertexchaos.com: emdash on Cloudflare Workers, Phase 2 — Core pages: Services + About + Contact, Phase 3 — Work: Case studies, Phase 4 — SEO + Trust signals, Phase 5 — Astro blog, Phase 6 — Contact form UX + Design revamp (+4 more)
 
 ### Community 27 - "Community 27"
-Cohesion: 0.25
-Nodes (7): GOALS.md — vertexchaos-site, Phase 1 — blog.vertexchaos.com: emdash on Cloudflare Workers ☐ Not Started, Phase 2 — Core pages: Services + About + Contact revamp ☐ Not Started, Phase 3 — Work page: Real case studies + AI/n8n cases ☐ Not Started, Phase 4 — SEO + Social proof + Trust signals ☐ Not Started, Phase 5 — blog.vertexchaos.com: Simple Astro blog (not emdash) ☐ Not Started, Phase 6 — Contact form UX + Site design revamp ☐ Not Started
+Cohesion: 0.15
+Nodes (12): GOALS.md — vertexchaos-site, Phase 10 — Testimonials Section ☐ Not Started, Phase 11 — Mobile Nav ☐ Not Started, Phase 1 — blog.vertexchaos.com: emdash on Cloudflare Workers ☐ Not Started, Phase 2 — Core pages: Services + About + Contact revamp ☐ Not Started, Phase 3 — Work page: Real case studies + AI/n8n cases ☐ Not Started, Phase 4 — SEO + Social proof + Trust signals ☐ Not Started, Phase 5 — blog.vertexchaos.com: Simple Astro blog (not emdash) ☐ Not Started (+4 more)
 
 ### Community 41 - "Community 41"
 Cohesion: 0.07
@@ -223,8 +224,12 @@ Nodes (9): code:powershell (Get-ADUser -Filter { Enabled -eq $false -and LastLog
 Cohesion: 0.22
 Nodes (8): Conference room AV systems, Domain computers during PXE boot, Printers, The certificate problem, The devices that will fail, The rollout sequence that works, VoIP phones, What the NPS log actually tells you
 
+### Community 54 - "Community 54"
+Cohesion: 0.5
+Nodes (3): blog, caseStudies, collections
+
 ## Knowledge Gaps
-- **262 isolated node(s):** `name`, `type`, `version`, `private`, `dev` (+257 more)
+- **272 isolated node(s):** `name`, `type`, `version`, `private`, `dev` (+267 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -232,7 +237,7 @@ Nodes (8): Conference room AV systems, Domain computers during PXE boot, Printer
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `name`, `type`, `version` to the rest of the system?**
-  _262 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _272 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
