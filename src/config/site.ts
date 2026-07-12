@@ -38,3 +38,9 @@
     { label: "Contact", href: "/contact" },
   ],
 } as const;
+
+export const testimonials: { quote: string; author: string; title: string }[] = [
+  { quote: "", author: "", title: "" },
+  { quote: "", author: "", title: "" },
+  { quote: "", author: "", title: "" },
+];
