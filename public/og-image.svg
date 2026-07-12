@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Blue accent bar left -->
+  <rect width="8" height="630" fill="#2563eb"/>
+  <!-- vc badge -->
+  <rect x="80" y="200" width="72" height="72" rx="12" fill="#2563eb"/>
+  <text x="116" y="251" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="white" text-anchor="middle">vc</text>
+  <!-- Headline -->
+  <text x="80" y="330" font-family="system-ui,sans-serif" font-size="52" font-weight="700" fill="white">Infrastructure that works.</text>
+  <text x="80" y="398" font-family="system-ui,sans-serif" font-size="52" font-weight="700" fill="#2563eb">Automation that sticks.</text>
+  <!-- Subhead -->
+  <text x="80" y="468" font-family="system-ui,sans-serif" font-size="24" fill="#94a3b8">IT infrastructure &amp; automation for small and mid-sized businesses.</text>
+  <!-- Domain -->
+  <text x="80" y="560" font-family="system-ui,sans-serif" font-size="20" fill="#64748b">vertexchaos.com</text>
+</svg>

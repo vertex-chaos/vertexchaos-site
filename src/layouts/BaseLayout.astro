@@ -50,6 +50,9 @@ const structuredData = JSON.stringify(jsonLd ?? defaultJsonLd);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
     <!-- Primary meta -->
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -61,11 +64,15 @@ const structuredData = JSON.stringify(jsonLd ?? defaultJsonLd);
     <meta property="og:title" content={ogTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`https://${site.domain}/og-image.svg`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={ogTitle} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`https://${site.domain}/og-image.svg`} />
 
     <!-- Structured data -->
     <script type="application/ld+json" set:html={structuredData} />
@@ -92,21 +99,21 @@ const structuredData = JSON.stringify(jsonLd ?? defaultJsonLd);
           </div>
           <div class="flex flex-wrap gap-12 text-sm">
             <div>
-              <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">Services</p>
+              <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Services</p>
               <div class="flex flex-col gap-2">
                 <a class="no-underline hover:text-white transition-colors" href="/services">All packages</a>
                 <a class="no-underline hover:text-white transition-colors" href="/contact">Get a quote</a>
               </div>
             </div>
             <div>
-              <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">Work</p>
+              <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Work</p>
               <div class="flex flex-col gap-2">
                 <a class="no-underline hover:text-white transition-colors" href="/work">Case studies</a>
                 <a class="no-underline hover:text-white transition-colors" href="/blog">Blog</a>
               </div>
             </div>
             <div>
-              <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">Connect</p>
+              <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Connect</p>
               <div class="flex flex-col gap-2">
                 <a class="no-underline hover:text-white transition-colors" href={site.links.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a class="no-underline hover:text-white transition-colors" href="/about">About</a>
