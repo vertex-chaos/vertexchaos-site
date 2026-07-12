@@ -23,11 +23,84 @@ import { site } from "../config/site";
       ))}
     </nav>
 
-    <a
-      href={site.links.contact}
-      class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white no-underline hover:bg-blue-700 transition-colors shadow-sm"
-    >
-      Contact
-    </a>
+    <div class="flex items-center gap-3">
+      <a
+        href={site.links.contact}
+        class="hidden md:inline-flex rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white no-underline hover:bg-blue-700 transition-colors shadow-sm"
+      >
+        Contact
+      </a>
+
+      <!-- Hamburger — mobile only -->
+      <button
+        id="nav-toggle"
+        class="md:hidden flex flex-col justify-center items-center w-9 h-9 gap-1.5 rounded-lg hover:bg-slate-100 transition-colors"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span class="hamburger-bar block h-0.5 w-5 bg-slate-700 transition-all"></span>
+        <span class="hamburger-bar block h-0.5 w-5 bg-slate-700 transition-all"></span>
+        <span class="hamburger-bar block h-0.5 w-5 bg-slate-700 transition-all"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white/95 backdrop-blur-sm">
+    <nav class="mx-auto max-w-6xl flex flex-col px-6 py-4 gap-1">
+      {site.nav.map((n) => (
+        <a
+          class="mobile-nav-link rounded-lg px-3 py-3 text-sm text-slate-600 no-underline hover:bg-slate-100 hover:text-slate-900 transition-colors"
+          href={n.href}
+        >
+          {n.label}
+        </a>
+      ))}
+      <a
+        href={site.links.contact}
+        class="mobile-nav-link mt-3 rounded-lg bg-blue-600 px-4 py-3 text-sm font-semibold text-white text-center no-underline hover:bg-blue-700 transition-colors"
+      >
+        Contact
+      </a>
+    </nav>
   </div>
 </header>
+
+<script>
+  const toggle = document.getElementById("nav-toggle");
+  const menu = document.getElementById("mobile-menu");
+  const bars = document.querySelectorAll(".hamburger-bar");
+
+  function openMenu() {
+    menu!.classList.remove("hidden");
+    toggle!.setAttribute("aria-expanded", "true");
+    bars[0].classList.add("rotate-45", "translate-y-2");
+    bars[1].classList.add("opacity-0");
+    bars[2].classList.add("-rotate-45", "-translate-y-2");
+  }
+
+  function closeMenu() {
+    menu!.classList.add("hidden");
+    toggle!.setAttribute("aria-expanded", "false");
+    bars[0].classList.remove("rotate-45", "translate-y-2");
+    bars[1].classList.remove("opacity-0");
+    bars[2].classList.remove("-rotate-45", "-translate-y-2");
+  }
+
+  toggle!.addEventListener("click", () => {
+    menu!.classList.contains("hidden") ? openMenu() : closeMenu();
+  });
+
+  // Close on nav link click
+  document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  // Close on outside click
+  document.addEventListener("click", (e) => {
+    const header = document.querySelector("header");
+    if (header && !header.contains(e.target as Node)) {
+      closeMenu();
+    }
+  });
+</script>
